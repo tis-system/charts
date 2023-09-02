@@ -52,12 +52,12 @@ func Import(ctx context.Context) error {
 		return err
 	}
 
-	indexFile, err := repo.IndexDirectory(path.Join("dist", "charts"), "")
+	indexFile, err := repo.IndexDirectory(path.Join(dist(), "charts"), "")
 	if err != nil {
 		return err
 	}
 
-	return indexFile.WriteFile(path.Join("dist", "charts", "index.yaml"), os.ModePerm)
+	return indexFile.WriteFile(path.Join(dist(), "charts", "index.yaml"), os.ModePerm)
 }
 
 func importAddonsCharts(ctx context.Context, names []string, deps []dependency) error {
@@ -98,7 +98,7 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 	helmArgs := []string{
 		"package",
 		"-u",
-		"--destination", path.Join("dist", "charts", "addons"),
+		"--destination", path.Join(dist(), "charts", "addons"),
 	}
 	err = toolbox().Run(ctx, "helm", append(helmArgs, charts...)...)
 	if err != nil {
@@ -130,7 +130,7 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 	downloads := "downloads"
 	downloaded := path.Join(downloads, name+".tar.gz")
 	build := path.Join("charts", "istio", version)
-	dist := path.Join("dist", "charts", "istio", version)
+	dist := path.Join(dist(), "charts", "istio", version)
 
 	_ = os.MkdirAll(downloads, os.ModePerm)
 	err := sh.Run("curl", "-sSLo", downloaded, "https://dl.getistio.io/public/raw/files/"+targz)
@@ -262,4 +262,16 @@ type config struct {
 
 type chart struct {
 	Version string `yaml:"version"`
+}
+
+func dist() string {
+	return envOr("DIST", "dist")
+}
+
+func envOr(key, fallback string) string {
+	v := os.Getenv(key)
+	if len(v) == 0 {
+		return fallback
+	}
+	return v
 }
