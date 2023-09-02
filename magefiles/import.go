@@ -54,12 +54,12 @@ func Import(ctx context.Context) error {
 		return err
 	}
 
-	indexFile, err := repo.IndexDirectory(path.Join(dist(), "charts"), "")
+	indexFile, err := repo.IndexDirectory(dist(), "")
 	if err != nil {
 		return err
 	}
 
-	return indexFile.WriteFile(path.Join(dist(), "charts", "index.yaml"), os.ModePerm)
+	return indexFile.WriteFile(path.Join(dist(), "index.yaml"), os.ModePerm)
 }
 
 func importAddonsCharts(ctx context.Context, names []string, deps []dependency) error {
