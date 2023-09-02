@@ -26,6 +26,8 @@ func toolbox() *tool.Box {
 }
 
 func Import(ctx context.Context) error {
+	_ = os.Setenv("TZ", "UTC")
+
 	err := toolbox().InstallAll(ctx)
 	if err != nil {
 		return err
@@ -98,9 +100,11 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 	helmArgs := []string{
 		"package",
 		"-u",
-		"--destination", path.Join(dist(), "charts", "addons"),
+		"--destination", path.Join(dist(), "addons"),
 	}
-	err = toolbox().Run(ctx, "helm", append(helmArgs, charts...)...)
+	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
+		"TZ": "UTC",
+	}}, "helm", append(helmArgs, charts...)...)
 	if err != nil {
 		return err
 	}
@@ -130,7 +134,7 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 	downloads := "downloads"
 	downloaded := path.Join(downloads, name+".tar.gz")
 	build := path.Join("charts", "istio", version)
-	dist := path.Join(dist(), "charts", "istio", version)
+	dist := path.Join(dist(), "istio", version)
 
 	_ = os.MkdirAll(downloads, os.ModePerm)
 	err := sh.Run("curl", "-sSLo", downloaded, "https://dl.getistio.io/public/raw/files/"+targz)
@@ -182,10 +186,12 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 	helmArgs := []string{
 		"package",
 		"-u",
-		"--destination", path.Join(dist),
+		"--destination", dist,
 		"--version", version,
 	}
-	err = toolbox().Run(ctx, "helm", append(helmArgs, charts...)...)
+	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
+		"TZ": "UTC",
+	}}, "helm", append(helmArgs, charts...)...)
 	if err != nil {
 		return err
 	}
