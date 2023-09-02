@@ -54,12 +54,34 @@ func Import(ctx context.Context) error {
 		return err
 	}
 
+	err = importSystemAgent(ctx)
+	if err != nil {
+		return err
+	}
+
 	indexFile, err := repo.IndexDirectory(dist(), "")
 	if err != nil {
 		return err
 	}
 
 	return indexFile.WriteFile(path.Join(dist(), "index.yaml"), os.ModePerm)
+}
+
+func importSystemAgent(ctx context.Context) error {
+	helmArgs := []string{
+		"package",
+		"-u",
+		"--destination", path.Join(dist(), "system"),
+	}
+	err := toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
+		"TZ": "UTC",
+	}}, "helm", append(helmArgs, path.Join("charts", "system", "agent"))...)
+	if err != nil {
+		return err
+	}
+
+	// TODO(dio): Modify timestamp, using the last commit date.
+	return nil
 }
 
 func importAddonsCharts(ctx context.Context, names []string, deps []dependency) error {
