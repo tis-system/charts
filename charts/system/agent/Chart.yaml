@@ -1,5 +1,7 @@
 apiVersion: v2
 name: agent
-description: A Helm cart for TIS Agent for Kubernetes.
+description: Helm cart for deploying TIS agent.
 version: 0.0.1
 appVersion: '0.0.1'
+annotations:
+  tetrate.io/system: "true"
