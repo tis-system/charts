@@ -26,6 +26,11 @@ func toolbox() *tool.Box {
 }
 
 func Import(ctx context.Context) error {
+	err := toolbox().InstallAll(ctx)
+	if err != nil {
+		return err
+	}
+
 	b, err := os.ReadFile("config.yaml")
 	if err != nil {
 		return err
