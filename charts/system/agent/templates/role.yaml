@@ -1,0 +1,80 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tis-token
+  namespace: '{{ .Release.Namespace }}'
+  annotations:
+    kubernetes.io/service-account.name: tis
+type: kubernetes.io/service-account-token
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tis
+  namespace: '{{ .Release.Namespace }}'
+secrets:
+  - name: tis-token
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: '{{ .Release.Namespace }}'
+  name: tis-secret-reader-role
+rules:
+  - apiGroups:
+      - ''
+    resources:
+      - 'secrets'
+    verbs:
+      - 'create'
+      - 'update'
+      - 'get'
+      - 'list'
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: istio-system
+  name: tis-istio-system-reader-role
+rules:
+  - apiGroups:
+      - ''
+    resources:
+      - 'pods'
+    verbs:
+      - 'get'
+      - 'list'
+  - apiGroups:
+      - ''
+    resources:
+      - 'pods/proxy'
+    verbs:
+      - 'get'
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: tis-secret-reader-role-binding
+  namespace: '{{ .Release.Namespace }}'
+roleRef:
+  kind: Role
+  name: tis-secret-reader-role
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+  - kind: ServiceAccount
+    name: tis
+    namespace: '{{ .Release.Namespace }}'
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: tis-istio-system-reader-role-binding
+  namespace: istio-system
+roleRef:
+  kind: Role
+  name: tis-istio-system-reader-role
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+  - kind: ServiceAccount
+    name: tis
+    namespace: '{{ .Release.Namespace }}'

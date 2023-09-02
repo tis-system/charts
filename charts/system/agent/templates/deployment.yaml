@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tis-agent
+  namespace: '{{ .Release.Namespace }}'
+  labels:
+    app: tis-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tis-agent
+  template:
+    metadata:
+      labels:
+        app: tis-agent
+    spec:
+      containers:
+        - name: tis-agent
+          image: '{{ .Values.image }}'
+          env:
+            - name: ENVIRONMENT
+              value: k8s
+      serviceAccountName: tis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tis-agent
+  namespace: '{{ .Release.Namespace }}'
+  labels:
+    app: tis-agent
+spec:
+  selector:
+    app: tis-agent
+  ports:
+    - name: tis-agent
+      port: 3000
+      targetPort: 3000

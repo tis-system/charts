@@ -1,0 +1,5 @@
+You can find the password by running:
+
+kubectl -n tis-system get secret tis-secret -o jsonpath="{.data.password}" | base64 -d
+
+Thanks!
