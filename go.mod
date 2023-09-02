@@ -5,7 +5,6 @@ go 1.21.0
 require (
 	github.com/dio/magex v0.0.0-20230901073655-aaf768cd7e8d
 	github.com/magefile/mage v1.15.0
-	go.uber.org/automaxprocs v1.5.3
 	golang.org/x/sync v0.3.0
 	gopkg.in/yaml.v3 v3.0.1
 	helm.sh/helm/v3 v3.12.3

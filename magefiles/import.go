@@ -10,7 +10,6 @@ import (
 
 	"github.com/dio/magex/tool"
 	"github.com/magefile/mage/sh"
-	_ "go.uber.org/automaxprocs"
 	"golang.org/x/sync/errgroup"
 	"gopkg.in/yaml.v3"
 
