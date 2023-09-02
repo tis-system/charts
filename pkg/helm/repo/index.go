@@ -16,7 +16,7 @@ import (
 )
 
 func IndexDirectory(dir, baseURL string) (*repo.IndexFile, error) {
-	archives, err := filepath.Glob(filepath.Join(dir, "*.tgz"))
+	archives, err := filepath.Glob(filepath.Join(dir, "*/*.tgz"))
 	if err != nil {
 		return nil, err
 	}
