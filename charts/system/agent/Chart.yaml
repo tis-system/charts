@@ -4,4 +4,4 @@ description: Helm cart for deploying TIS agent.
 version: 0.0.1
 appVersion: '0.0.1'
 annotations:
-  tetrate.io/system: "true"
+  tetrate.io/system: 'true'
