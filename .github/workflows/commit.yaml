@@ -41,7 +41,7 @@ jobs:
         with:
           branch: gh-pages
           repository: gh-pages
-          file_pattern: 'addons istio system index.yaml'
+          file_pattern: 'addons istio system index.json index.yaml'
       - if: github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a # v4.16.0
         with:
