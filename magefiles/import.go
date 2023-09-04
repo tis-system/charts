@@ -84,16 +84,18 @@ func createIndex() error {
 	}
 
 	idx := index{
-		Systems: make([]string, 0),
-		Addons:  make([]string, 0),
+		Istios:  make(map[string]interface{}, 0),
+		Systems: make(map[string]interface{}, 0),
+		Addons:  make(map[string]interface{}, 0),
 	}
 	for k, v := range indexFile.Entries {
 		for _, chart := range v {
 			if containsAnnotation(chart.Annotations, "tetrate.io/system") {
-				idx.Systems = append(idx.Systems, k)
-			}
-			if containsAnnotation(chart.Annotations, "tetrate.io/addon") {
-				idx.Addons = append(idx.Addons, k)
+				idx.Systems[k] = chart
+			} else if containsAnnotation(chart.Annotations, "tetrate.io/addon") {
+				idx.Addons[k] = chart
+			} else { // Seems like istio in chart.Keywords is not reliable enough.
+				idx.Istios[k] = chart
 			}
 		}
 	}
@@ -122,9 +124,10 @@ func createIndex() error {
 }
 
 type index struct {
-	Index   json.RawMessage `json:"index"`
-	Addons  []string        `json:"addons"`
-	Systems []string        `json:"systems"`
+	Index   json.RawMessage        `json:"index"`
+	Istios  map[string]interface{} `json:"istios"`
+	Addons  map[string]interface{} `json:"addons"`
+	Systems map[string]interface{} `json:"systems"`
 }
 
 func loadConfig() (*config, error) {
