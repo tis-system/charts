@@ -72,13 +72,43 @@ func (Import) Addons(ctx context.Context) error {
 	return importSystemAgent(ctx)
 }
 
+func containsAnnotation(annotations map[string]string, key string) bool {
+	v, ok := annotations[key]
+	return ok && v == "true"
+}
+
 func createIndex() error {
 	indexFile, err := repo.IndexDirectory(dist(), "")
 	if err != nil {
 		return err
 	}
 
+	idx := index{
+		Systems: make([]string, 0),
+		Addons:  make([]string, 0),
+	}
+	for k, v := range indexFile.Entries {
+		for _, chart := range v {
+			if containsAnnotation(chart.Annotations, "tetrate.io/system") {
+				idx.Systems = append(idx.Systems, k)
+			}
+			if containsAnnotation(chart.Annotations, "tetrate.io/addon") {
+				idx.Addons = append(idx.Addons, k)
+			}
+		}
+	}
+
 	b, err := json.Marshal(indexFile)
+	if err != nil {
+		return err
+	}
+
+	err = json.Unmarshal(b, &idx.Index)
+	if err != nil {
+		return err
+	}
+
+	b, err = json.Marshal(idx)
 	if err != nil {
 		return err
 	}
@@ -89,6 +119,12 @@ func createIndex() error {
 	}
 
 	return indexFile.WriteFile(path.Join(dist(), "index.yaml"), os.ModePerm)
+}
+
+type index struct {
+	Index   json.RawMessage `json:"index"`
+	Addons  []string        `json:"addons"`
+	Systems []string        `json:"systems"`
 }
 
 func loadConfig() (*config, error) {
