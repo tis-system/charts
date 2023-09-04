@@ -3,20 +3,16 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"os"
 	"path"
-	"path/filepath"
 	"strings"
 
 	"github.com/dio/magex/tool"
 	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
-	"golang.org/x/sync/errgroup"
 	"gopkg.in/yaml.v3"
 
 	"github.com/tis-system/charts/pkg/helm/repo"
-	"github.com/tis-system/charts/pkg/helm/values"
 )
 
 var Aliases = map[string]interface{}{
@@ -143,190 +139,6 @@ func loadConfig() (*config, error) {
 		return nil, err
 	}
 	return loaded, nil
-}
-
-func importSystemAgent(ctx context.Context) error {
-	helmArgs := []string{
-		"package",
-		"-u",
-		"--destination", path.Join(dist(), "system"),
-	}
-	err := toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
-		"TZ": "UTC",
-	}}, "helm", append(helmArgs, path.Join("charts", "system", "agent"))...)
-	if err != nil {
-		return err
-	}
-
-	// TODO(dio): Modify timestamp, using the last commit date.
-	return nil
-}
-
-func importAddonsCharts(ctx context.Context, names []string, deps []dependency) error {
-	original := path.Join("downloads", "tetratelabs", "helm-charts")
-	_ = os.RemoveAll(original)
-	_ = os.MkdirAll(original, os.ModePerm)
-	err := sh.Run("git", "clone", "--depth", "1", "--single-branch", "-b", "main", "https://github.com/tetratelabs/helm-charts.git", original)
-	if err != nil {
-		return err
-	}
-	charts := []string{}
-	for _, name := range names {
-		chart := path.Join("charts", "addons", name)
-		_ = os.MkdirAll(filepath.Dir(chart), os.ModePerm)
-
-		// Inspect the chart, and create a directory under addons/name.
-		c := path.Join(original, "charts", name, "Chart.yaml")
-		v, err := getChartVersion(c)
-		if err != nil {
-			return err
-		}
-		dst := path.Join(filepath.Dir(chart), name, v)
-		_ = os.MkdirAll(dst, os.ModePerm)
-		err = sh.Run("cp", "-af", path.Join(original, "charts", name)+"/.", dst)
-		if err != nil {
-			return err
-		}
-		charts = append(charts, dst)
-	}
-
-	for _, dep := range deps {
-		err = toolbox().Run(ctx, "helm", "repo", "add", dep.Name, dep.URL)
-		if err != nil {
-			return err
-		}
-	}
-
-	for _, chart := range charts {
-		_, err = os.Stat(path.Join(chart, "Chart.lock"))
-		if err == nil {
-			err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
-				"TZ": "UTC",
-			}}, "helm", "dependency", "build", chart)
-			if err != nil {
-				return err
-			}
-		}
-
-		readme := path.Join(chart, "README.md")
-		_, err = os.Stat(readme)
-		if err == nil {
-			valueDir := path.Join(dist(), strings.TrimPrefix(chart, "charts/"))
-			_ = os.MkdirAll(valueDir, os.ModePerm)
-			parsed, _ := values.FromMarkdown(readme)
-			b, err := json.Marshal(parsed)
-			if err != nil {
-				return err
-			}
-			_ = os.WriteFile(path.Join(valueDir, "values.json"), b, os.ModePerm)
-		}
-	}
-
-	helmArgs := []string{
-		"package",
-		"--destination", path.Join(dist(), "addons"),
-	}
-	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
-		"TZ": "UTC",
-	}}, "helm", append(helmArgs, charts...)...)
-	if err != nil {
-		return err
-	}
-
-	// TODO(dio): Modify timestamp, using the last commit date.
-	return nil
-}
-
-func importIstioCharts(ctx context.Context, istios []istio) error {
-	g, _ := errgroup.WithContext(ctx)
-	for _, entry := range istios {
-		entry := entry
-		fmt.Println("importing", entry.Version, "...")
-		g.TryGo(func() error {
-			return importIstioChartsPerVersion(ctx, entry.Version, entry.Tetrate)
-		})
-	}
-	return g.Wait()
-}
-
-func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) error {
-	if len(tetrateV) == 0 {
-		tetrateV = "0"
-	}
-	name := "istio-" + version + "-tetrate-v" + tetrateV
-	targz := name + "-linux-amd64.tar.gz"
-	downloads := "downloads"
-	downloaded := path.Join(downloads, name+".tar.gz")
-	build := path.Join("charts", "istio", version)
-	dist := path.Join(dist(), "istio", version)
-
-	_ = os.MkdirAll(downloads, os.ModePerm)
-	err := sh.Run("curl", "-sSLo", downloaded, "https://dl.getistio.io/public/raw/files/"+targz)
-	if err != nil {
-		return err
-	}
-
-	err = sh.Run("tar", "xzf", downloaded, "-C", downloads)
-	if err != nil {
-		return err
-	}
-
-	_ = os.RemoveAll(build)
-	_ = os.MkdirAll(build, os.ModePerm)
-	err = sh.Run("cp", "-fa", path.Join(downloads, name, "manifests", "charts")+"/.", build)
-	if err != nil {
-		return err
-	}
-	entries, err := os.ReadDir(path.Join(build))
-	if err != nil {
-		return err
-	}
-	charts := []string{}
-	for _, entry := range entries {
-		entry := entry
-		if entry.IsDir() {
-			chart := path.Join(build, entry.Name(), "Chart.yaml")
-			_, err := os.Stat(chart)
-			if err != nil {
-				// If missing we need to check if this directory has subdirectories.
-				subentries, err := os.ReadDir(filepath.Dir(chart))
-				if err != nil {
-					return err
-				}
-				for _, subentry := range subentries {
-					subchart := path.Join(filepath.Dir(chart), subentry.Name(), "Chart.yaml")
-					_, err := os.Stat(subchart)
-					if err != nil {
-						return err
-					}
-					charts = append(charts, filepath.Dir(subchart))
-				}
-				continue
-			}
-			charts = append(charts, filepath.Dir(chart))
-		}
-	}
-	_ = os.RemoveAll(dist)
-	helmArgs := []string{
-		"package",
-		"--destination", dist,
-		"--version", version,
-	}
-	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
-		"TZ": "UTC",
-	}}, "helm", append(helmArgs, charts...)...)
-	if err != nil {
-		return err
-	}
-
-	// Note: This requires gnu-tar (tar (GNU tar) 1.35).
-	// On macOS, brew install gnu-tar.
-	// export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
-	infoTime, err := getCreationTime(downloaded)
-	if err != nil {
-		return err
-	}
-	return modifyTimestamp(dist, infoTime)
 }
 
 func getCreationTime(downloaded string) (string, error) {
