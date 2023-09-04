@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"os"
 	"path"
@@ -9,12 +10,17 @@ import (
 	"strings"
 
 	"github.com/dio/magex/tool"
+	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
 	"golang.org/x/sync/errgroup"
 	"gopkg.in/yaml.v3"
 
 	"github.com/tis-system/charts/pkg/helm/repo"
 )
+
+var Aliases = map[string]interface{}{
+	"import": Import.All,
+}
 
 var box *tool.Box
 
@@ -25,7 +31,9 @@ func toolbox() *tool.Box {
 	return box
 }
 
-func Import(ctx context.Context) error {
+type Import mg.Namespace
+
+func (Import) All(ctx context.Context) error {
 	_ = os.Setenv("TZ", "UTC")
 
 	err := toolbox().InstallAll(ctx)
@@ -33,18 +41,25 @@ func Import(ctx context.Context) error {
 		return err
 	}
 
-	b, err := os.ReadFile("config.yaml")
+	mg.CtxDeps(ctx, Import.Istio, Import.Addons)
+
+	return createIndex()
+}
+
+func (Import) Index() error {
+	return createIndex()
+}
+
+func (Import) Istio(ctx context.Context) error {
+	loaded, err := loadConfig()
 	if err != nil {
 		return err
 	}
-	var loaded config
+	return importIstioCharts(ctx, loaded.Istios)
+}
 
-	err = yaml.Unmarshal(b, &loaded)
-	if err != nil {
-		return err
-	}
-
-	err = importIstioCharts(ctx, loaded.Istios)
+func (Import) Addons(ctx context.Context) error {
+	loaded, err := loadConfig()
 	if err != nil {
 		return err
 	}
@@ -54,17 +69,40 @@ func Import(ctx context.Context) error {
 		return err
 	}
 
-	err = importSystemAgent(ctx)
-	if err != nil {
-		return err
-	}
+	return importSystemAgent(ctx)
+}
 
+func createIndex() error {
 	indexFile, err := repo.IndexDirectory(dist(), "")
 	if err != nil {
 		return err
 	}
 
+	b, err := json.Marshal(indexFile)
+	if err != nil {
+		return err
+	}
+
+	err = os.WriteFile(path.Join(dist(), "index.json"), b, os.ModePerm)
+	if err != nil {
+		return err
+	}
+
 	return indexFile.WriteFile(path.Join(dist(), "index.yaml"), os.ModePerm)
+}
+
+func loadConfig() (*config, error) {
+	b, err := os.ReadFile("config.yaml")
+	if err != nil {
+		return nil, err
+	}
+
+	loaded := new(config)
+	err = yaml.Unmarshal(b, loaded)
+	if err != nil {
+		return nil, err
+	}
+	return loaded, nil
 }
 
 func importSystemAgent(ctx context.Context) error {
@@ -119,9 +157,20 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 		}
 	}
 
+	for _, chart := range charts {
+		_, err = os.Stat(path.Join(chart, "Chart.lock"))
+		if err == nil {
+			err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
+				"TZ": "UTC",
+			}}, "helm", "dependency", "build", chart)
+			if err != nil {
+				return err
+			}
+		}
+	}
+
 	helmArgs := []string{
 		"package",
-		"-u",
 		"--destination", path.Join(dist(), "addons"),
 	}
 	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
@@ -207,7 +256,6 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 	_ = os.RemoveAll(dist)
 	helmArgs := []string{
 		"package",
-		"-u",
 		"--destination", dist,
 		"--version", version,
 	}
@@ -220,6 +268,7 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 
 	// Note: This requires gnu-tar (tar (GNU tar) 1.35).
 	// On macOS, brew install gnu-tar.
+	// export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
 	infoTime, err := getCreationTime(downloaded)
 	if err != nil {
 		return err
