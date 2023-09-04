@@ -16,6 +16,7 @@ import (
 	"gopkg.in/yaml.v3"
 
 	"github.com/tis-system/charts/pkg/helm/repo"
+	"github.com/tis-system/charts/pkg/helm/values"
 )
 
 var Aliases = map[string]interface{}{
@@ -205,6 +206,19 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 			if err != nil {
 				return err
 			}
+		}
+
+		readme := path.Join(chart, "README.md")
+		_, err = os.Stat(readme)
+		if err == nil {
+			valueDir := path.Join(dist(), strings.TrimPrefix(chart, "charts/"))
+			_ = os.MkdirAll(valueDir, os.ModePerm)
+			parsed, _ := values.FromMarkdown(readme)
+			b, err := json.Marshal(parsed)
+			if err != nil {
+				return err
+			}
+			_ = os.WriteFile(path.Join(valueDir, "values.json"), b, os.ModePerm)
 		}
 	}
 
