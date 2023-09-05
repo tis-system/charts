@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # This requires gnu-sed to be installed.
+# On macOS, brew install gnu-sed.
+# export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 # TODO(dio): Port to Go.
 
 set -e

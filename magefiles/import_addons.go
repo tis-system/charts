@@ -70,6 +70,10 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 				return err
 			}
 			_ = os.WriteFile(path.Join(valueDir, "values.json"), b, os.ModePerm)
+			err = sh.Run("cp", "-f", readme, valueDir)
+			if err != nil {
+				return err
+			}
 		}
 	}
 
