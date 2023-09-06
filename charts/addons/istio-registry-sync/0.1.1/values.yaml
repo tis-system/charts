@@ -15,7 +15,7 @@ consul:
   endpoint: ""
 
 image:
-  repository: ghcr.io/tetratelabs/istio-registry-sync
+  repository: docker.cloudsmith.io/tetrate/tis-containers/istio-registry-sync
   pullPolicy: IfNotPresent
   tag: v0.4.0
 

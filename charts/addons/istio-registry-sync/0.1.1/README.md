@@ -14,7 +14,7 @@ A Helm chart for deploying Istio Registry Sync
 | consul.namespace | string | `""` | Consul's namespace to search service catalog |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"ghcr.io/tetratelabs/istio-registry-sync"` |  |
+| image.repository | string | `"docker.cloudsmith.io/tetrate/tis-containers/istio-registry-sync"` |  |
 | image.tag | string | `"v0.4.0"` |  |
 | imagePullSecrets | list | `[]` |  |
 | nameOverride | string | `""` |  |
