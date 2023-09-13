@@ -27,7 +27,8 @@ func importSystemAgent(ctx context.Context) error {
 
 		v, err := readVersion(s)
 		if err == nil {
-			helmArgs = append(helmArgs, "--app-version", strings.TrimPrefix(v, "v"), path.Join(s))
+			version := strings.TrimPrefix(v, "v")
+			helmArgs = append(helmArgs, "--app-version", version, path.Join(s), "--version", version)
 		}
 
 		if err := toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
