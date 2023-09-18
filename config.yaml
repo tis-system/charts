@@ -16,6 +16,7 @@ istios:
   - version: "1.17.5"
   - version: "1.18.0"
   - version: "1.18.2"
+  - version: "1.18.3"
 
 addons:
   - istio-monitoring
