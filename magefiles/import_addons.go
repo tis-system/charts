@@ -21,6 +21,25 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 	if err != nil {
 		return err
 	}
+
+	cwd, err := os.Getwd()
+	if err != nil {
+		return err
+	}
+	err = os.Chdir(original)
+	if err != nil {
+		return err
+	}
+	err = sh.Run("go", "run", "github.com/3128px/helm-docs/cmd/helm-docs@cd6d19df68d4b5edaf2cd0fcf7a5e096a1e91878")
+	if err != nil {
+		return err
+	}
+
+	err = os.Chdir(cwd)
+	if err != nil {
+		return nil
+	}
+
 	charts := []string{}
 	for _, name := range names {
 		chart := path.Join("charts", "addons", name)

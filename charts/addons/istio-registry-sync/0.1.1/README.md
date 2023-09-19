@@ -29,3 +29,4 @@ A Helm chart for deploying Istio Registry Sync
 | serviceAccount.create | bool | `true` |  |
 | serviceAccount.name | string | `""` | If not set and create is true, a name is generated using the fullname template |
 | tolerations | list | `[]` |  |
+
