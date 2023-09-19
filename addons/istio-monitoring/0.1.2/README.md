@@ -8,8 +8,8 @@ A Helm chart for deploying Istio Monitoring
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://grafana.github.io/helm-charts | grafana | 6.58.4 |
-| https://prometheus-community.github.io/helm-charts | prometheus | 19.6.1 |
+| [https://grafana.github.io/helm-charts](https://grafana.github.io/helm-charts) | grafana | 6.58.4 |
+| [https://prometheus-community.github.io/helm-charts](https://prometheus-community.github.io/helm-charts) | prometheus | 19.6.1 |
 
 ## Values
 
@@ -42,3 +42,4 @@ A Helm chart for deploying Istio Monitoring
 | prometheus.server.podLabels."sidecar.istio.io/inject" | string | `"false"` |  |
 | prometheus.server.readinessProbeInitialDelay | int | `0` |  |
 | prometheus.server.service.servicePort | int | `9090` |  |
+
