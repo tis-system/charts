@@ -18,6 +18,9 @@ spec:
       containers:
         - name: tis-agent
           image: '{{ .Values.image }}'
+          args:
+            - --namespace
+            - '{{ .Release.Namespace }}'
           env:
             - name: ENVIRONMENT
               value: k8s
