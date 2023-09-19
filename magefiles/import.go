@@ -38,7 +38,7 @@ func (Import) All(ctx context.Context) error {
 		return err
 	}
 
-	mg.CtxDeps(ctx, Import.Istio, Import.Addons)
+	mg.SerialCtxDeps(ctx, Import.Istio, Import.Addons)
 
 	return createIndex()
 }
