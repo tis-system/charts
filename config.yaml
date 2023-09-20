@@ -20,8 +20,10 @@ istios:
   - version: "1.19.0"
 
 addons:
-  - istio-monitoring
   - istio-registry-sync
+
+demos:
+  - istio-monitoring-demo
 
 dependencies:
   - name: grafana

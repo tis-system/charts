@@ -13,7 +13,7 @@ import (
 	"github.com/tis-system/charts/pkg/helm/values"
 )
 
-func importAddonsCharts(ctx context.Context, names []string, deps []dependency) error {
+func importAddonsOrDemosCharts(ctx context.Context, names []string, deps []dependency, namespace string) error {
 	original := path.Join("downloads", "tetratelabs", "helm-charts")
 	_ = os.RemoveAll(original)
 	_ = os.MkdirAll(original, os.ModePerm)
@@ -42,7 +42,7 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 
 	charts := []string{}
 	for _, name := range names {
-		chart := path.Join("charts", "addons", name)
+		chart := path.Join("charts", namespace, name)
 		_ = os.MkdirAll(filepath.Dir(chart), os.ModePerm)
 
 		// Inspect the chart, and create a directory under addons/name.
@@ -98,7 +98,7 @@ func importAddonsCharts(ctx context.Context, names []string, deps []dependency) 
 
 	helmArgs := []string{
 		"package",
-		"--destination", path.Join(dist(), "addons"),
+		"--destination", path.Join(dist(), namespace),
 	}
 	err = toolbox().RunWith(ctx, tool.RunWithOption{Env: map[string]string{
 		"TZ": "UTC",

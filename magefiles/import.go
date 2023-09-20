@@ -61,7 +61,12 @@ func (Import) Addons(ctx context.Context) error {
 		return err
 	}
 
-	err = importAddonsCharts(ctx, loaded.Addons, loaded.Dependencies)
+	err = importAddonsOrDemosCharts(ctx, loaded.Addons, loaded.Dependencies, "addons")
+	if err != nil {
+		return err
+	}
+
+	err = importAddonsOrDemosCharts(ctx, loaded.Demos, loaded.Dependencies, "demos")
 	if err != nil {
 		return err
 	}
@@ -203,6 +208,7 @@ type dependency struct {
 type config struct {
 	Istios       []istio      `yaml:"istios"`
 	Addons       []string     `yaml:"addons"`
+	Demos        []string     `yaml:"demos"`
 	Dependencies []dependency `yaml:"dependencies"`
 }
 
