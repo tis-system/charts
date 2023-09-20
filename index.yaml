@@ -5,9 +5,9 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+2977331
-    created: "2023-09-20T03:07:48.185162484Z"
+    created: "2023-09-20T03:33:18.817224296Z"
     description: Helm cart for deploying TIS agent.
-    digest: f996b113e5392a6150e534288780fb32dc7b6f418d0fe4ca675912802e76ba8b
+    digest: c33a345e00163a02ddf75bbbaaa0b532bd3875bfa0bd39599a9d204a1f59cd4b
     name: agent
     urls:
     - system/agent-0.0.1-nightly+2977331.tgz
@@ -16,7 +16,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+31b84ce
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: c546bbe2a733359f5613ac7ce5850f52a989b24f06ff213e5f606c5eb6e35c16
     name: agent
@@ -27,7 +27,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+42b16e3
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: 93824d23ae3c822fdaedaac83812ca2a18e60345b13a5d2467546b88eff08447
     name: agent
@@ -38,7 +38,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+4b6a7c8
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: ef71da43d73d6d23eb7e7f25d4eb26d88976e134fa1b54416896a08c1a90f1b8
     name: agent
@@ -49,7 +49,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+7d47b91
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: 3f00b8182b67dd8834ac0a510b3fe40f71cb26748521bea05be18199067d2c86
     name: agent
@@ -60,7 +60,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+826c3e1
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: b020e1c850b6d0be6cfde6bf17bd8f7bccf8d331647fe10c359a3fb86ee43f1f
     name: agent
@@ -71,7 +71,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+a71f389
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: e3e4217b5725fd030fb7d1b741ca8c6a6fc63eb9654bb49800954bdbb07d28b1
     name: agent
@@ -82,7 +82,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+bc1b466
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: c1fcb7a8e1cb3247f5f1795c1050a5b048729484a8029b25cf243b9bd9982766
     name: agent
@@ -93,7 +93,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+e56ff1b
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: 32f820c47180d9f1bfa6105abd1752ebdcdc0c007d7c8c2df7a7f8813a2d094d
     name: agent
@@ -104,7 +104,7 @@ entries:
       tetrate.io/system: "true"
     apiVersion: v2
     appVersion: 0.0.1-nightly+f6f38ac
-    created: "2023-09-20T03:07:06.173338754Z"
+    created: "2023-09-20T03:32:38.584743768Z"
     description: Helm cart for deploying TIS agent.
     digest: 23ca01c9dbcb39db2809adf2d584997fd682dff1713c57e802c0a503ed5c71fd
     name: agent
@@ -116,7 +116,7 @@ entries:
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 66006111a00d870627ee4d485a4743293e7c3e2b2ef2a52e4f6e08044565ab46
+    digest: eb1bd44e3585c43dc09fd7b3b925d2d36ea1eb084ed580ee7008fa8c5b927f7c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -130,7 +130,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 8aa997c9cc45b21605bda1772d141f1db195283e79ca673e2a1f9a77bdf5c111
+    digest: 9fabd04746f60367d6ef95ba001ad0d1aa44699566b11050216b01ef2ca69f35
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -144,7 +144,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: d14baec03002665c88c21f59acd45dfd3e1553fee5ef5fbbc3de23ca5a02a977
+    digest: 8f04831bf229fd1668e64767ebe3ece6d683e27fb330bd68d125cf659486b8d2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -158,7 +158,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 4d0d2e8376483395454a66d316780716f2f04ea13a42f2236b1701eb2b3f3568
+    digest: 09c6c4edb0ad05e091fc9e70b7143c58abddc2e48d277e985634e725e0944d40
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -172,7 +172,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 87a08d5da66d2e63f2a3b6b3be4ae32573edc35a47bd6d09f6ee3ac18d9f2672
+    digest: 9671a827b4e48ca360b701f51ae75cb085bd9bcebc08b87fbd82d2c834398ee3
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -186,7 +186,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: b417155c99a59423c13e13d8310752d4b14c57912eb74e9f00909dc43265d3d6
+    digest: fb4eea26bb98ae2d8a375d0cbdb2ae00d500a3e110d588fc23e19654eb2e8705
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -200,7 +200,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 144248184845f914d584a0fa35af44ab9cb506a2aa58bab46f671f7b0f42b1ca
+    digest: 3be6ebeb2ba3a49a11f255e6ad0d8f4557e47c1637bdddfd70d261addc2aa6d8
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -214,7 +214,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: b740d55b497c61b5fcfde37acddc35f418568f64efd32ebc73dec7557bc71d6c
+    digest: 0f6497e9d109361d709780d9e016f1602facbd3278e2aa6757fd69a70214fd96
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -228,7 +228,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: b27e9e35a24986351b0088c139ead02618310aaa7ce5f7bee3995f2c87ff391d
+    digest: 1476dedb00e4d345af30c5ee3f6c97d12ea811b003e479325acc4ebc4d89f381
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -242,7 +242,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: f0037c0a4b8ea33d4419225dc3634ba30a0cd848a1aad56be82f12f4fdd5efe2
+    digest: e5786b04a3c19739ba2f6eaa2a255735211ff1c9244fdf33db4998d6464c7701
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -256,7 +256,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: d1d0fc476f7b7e0a0645b9f54b4f959d06523d5f58fe43a7f4773c2d2628ba5a
+    digest: 8b7d48b29c1fb18f8879be31bde7504890088aeb67e88cd6b6a997dbe0e91e73
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -270,7 +270,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: a1e1be62efa46beaf4996a5e60b9c86d5aa70c1846bc4b94099533b7954fccf6
+    digest: 81e7a13abd31fe93c368696f1d081bfb5c6ece69ddbec39e98959df8629cae2b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -284,7 +284,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 9eac94c8c0a076fbc58efe41e18e5a637b02a0a19b85d507e9abfa2ae93b1a06
+    digest: 3317bc396db40635bbb315554045cb7a27396fdf637814ed0fe189419a459771
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -298,7 +298,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 157432ef090d54aace9ebb5a25b676bd5364fcc6fbe222e512e58a432697d80b
+    digest: 1729ce2e6217cdc9408409a164f8353d1d46d244494288c69c2d6b11d0186496
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -312,7 +312,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: aaaf27b0a8fb33c5b97a9661c74c825eba7eb7df8534b3d4ef5119ff2c455ddf
+    digest: dc0c71ee4f45f873470ed574d4e2aaa36d67bb18b433bd012df43823ea96089f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -326,7 +326,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 162871f837b85bed7a5df9cd3886075a8468c9680483dfb1a77f18190607f12d
+    digest: 79e1e862ce6bf1c1f6f7c49cb6511e07820dac6710db1e607078938ee471c58d
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -340,7 +340,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
-    digest: 2349ca1186f5ccb6ed87f0743b7f665b6c12d6e40a4276f545323bd508d3ae87
+    digest: 8d2ffb7cdd1a3e9db03c0b7f68a11079b4f03058bde601a2efbcda1111268b5d
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -350,12 +350,26 @@ entries:
     urls:
     - istio/1.18.3/base-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs
+    digest: 212feba9430340b55805404aed0cae2b3442c692b3daa27fccf5973249476552
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    name: base
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/base-1.19.0.tgz
+    version: 1.19.0
   cni:
   - apiVersion: v1
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for istio-cni components
-    digest: 6f15c11ebbd1f2cf20ea2c743b00319fabb31d031b2ce6af7e7a1abc23fd3a9f
+    digest: 4886ba54a2ce2aa7fa1d01d624115b22f9c78b5ec8578b8125698b9f08289dff
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -370,7 +384,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for istio-cni components
-    digest: 7016d03cd13a7944cabc89529412c5d630e94c023dfe26586a137365f302a82d
+    digest: f0828718c8069db376406aecb4d376eedc9589c893525a9d72e087c6e4f0679c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -385,7 +399,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for istio-cni components
-    digest: 964240d51bd9069a44ec33bc1450f4a84710cf4d98065f59da632cbe6bf607f1
+    digest: 7464853f35874fef6373de3c9fef74f509a6e871a267a0f66462d56ed2879b5f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -400,7 +414,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for istio-cni components
-    digest: 8270774379252af2024b302eae60dfd539538fa436007db375881540930b5e1d
+    digest: 00a8f7d444b3fe438df6df6e4fdf22a91b24af676e824763500e41999243f09f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -415,7 +429,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for istio-cni components
-    digest: 9cbd1e9bd0f39db3a3dfd50ac5dfa698f3bf6da9c1687997eee6fae4556fb75e
+    digest: d8e978bbf5fbd8ed973df3712565021325350f00e2e1967111d9c1e527a1b627
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -430,7 +444,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for istio-cni components
-    digest: ba3a09e13cbc6b866e05221d3b8e7586610faa501a83239740e9429da3ae3706
+    digest: ca3cb18ddd87b5cddccc22cfb68850e91cc97fdaf875ec8a5b1cd380c0b5950b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -445,7 +459,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for istio-cni components
-    digest: df3615be3ce0b2e6e3a17717c2dea1672d63b0fef6b7ab766799873ddf5600b4
+    digest: 117943b2d60142a77c29968313ca5e99fc8af7654891c1b5dc1a052449ea5c71
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -460,7 +474,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for istio-cni components
-    digest: f86fe167cab2090c381d444165d25ecb2e0dd90161f6769bac7906b77ddc6d45
+    digest: e7cb30a2bab203c95e476856aa1a2b01c699d89045268740fe3b984270cabe7e
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -475,7 +489,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for istio-cni components
-    digest: d25f5b6332319823c0f854e39d2a957e4ca03916c06a2abd05c8829c2842d191
+    digest: afce2aea0e72f3331745fcf3de15c5b9d7c6485758a022dad8e51dbb56d38c5a
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -490,7 +504,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for istio-cni components
-    digest: c775fcc9c890c80c6c8ef51ab22389c93671aed989eab02d58ab772443af0d4f
+    digest: bd50961cca836aa14d68091c96c8f8d6de567a21179e03b7b4fe3fb63f1c4915
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -505,7 +519,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for istio-cni components
-    digest: f92dbab66ebf9a8c4ab798392242a1db9e74126cf6fcfb3e36c005fa721ed11e
+    digest: 83cbb61384d456e6b0315e0da721489603ec6d1efd9ee644d7ce7636ec4351a6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -520,7 +534,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for istio-cni components
-    digest: 54e6c9dbef53b3c2deb17bf7886c0f73d087a4e68c93078209c7791e37590897
+    digest: 3fa51fe124ded57fd8e3a1e4655bbd30157c64e03dcd80478eea2dcb20bc2755
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -535,7 +549,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for istio-cni components
-    digest: 95d07cdbaf240632a48609f53210dbdc532987317827986cc665c54417975b77
+    digest: eb144c40dde87c41cb69571cfc7e684d943022a739012253d7dbec9ddcc477e5
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -550,7 +564,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for istio-cni components
-    digest: b58567edc1dd6f163ec4ef5866893b75186cfc7f9c69aa92886285fa1abc0e23
+    digest: eb8d26a99817045100f6495e18639388059aadc1a140b665615171e958555572
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -565,7 +579,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for istio-cni components
-    digest: ad792b927f0024cc36150a05df4e5989d901c4d01e74a45895484900c751515d
+    digest: 68b104b283c559f4cefab117cc6b146cfeac7cc2e2c833c1bb08328129b41c32
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -580,7 +594,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for istio-cni components
-    digest: ecb7c36198708b16137bad3a2cbcafab91cc3bcd3a67a17b641b39ab1bba1118
+    digest: f8a1f86eb7bd191c04078d1982969abb5e108dfe378029cf621390c869d7c80f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -595,7 +609,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for istio-cni components
-    digest: 080fa566ff0109f83cf1320636f8e9f4e5493ea1ebe70ebece2ea73d076ae675
+    digest: bf2222d6e032aa4e05c87595218993cfc3bca1cc1b363b8bda5ac097c6d45bf5
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-cni
@@ -606,12 +620,27 @@ entries:
     urls:
     - istio/1.18.3/cni-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for istio-cni components
+    digest: c0647ddd0d06457657bb8ea89962f876f98927110b2b4cfb7001c69b37f8cd68
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio-cni
+    - istio
+    name: cni
+    sources:
+    - https://github.com/istio/istio/tree/master/cni
+    urls:
+    - istio/1.19.0/cni-1.19.0.tgz
+    version: 1.19.0
   gateway:
   - apiVersion: v2
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for deploying Istio gateways
-    digest: 034099f4b180670b3ff32f2c005d36cd9717d54cc870bf4be5b9b1ad3e624ec9
+    digest: 6b2c0194de3070d35a770af7fa95391ea6a57a00cbae8aa612b8aa76b2d0c72c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -627,7 +656,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: 1e22223555424dd208fc87806d8472dfb68c92af0bfc279a1c24fb9faaf508ef
+    digest: d2089f115a505c67acd46830a9da0efe4b6ec340126a6e73004e431e45d70c04
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -643,7 +672,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for deploying Istio gateways
-    digest: 7934c004107d787666f18f724adb4d6b49b8a7b7de3fea3e9a42a07cab113410
+    digest: b827dc02b4ca9b4c55524a946cb4692f40d0ba8428e1fd42de34f277724a69fd
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -659,7 +688,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for deploying Istio gateways
-    digest: 55ed049ec6b6e3b8a6be62b4fe27fa9ed74543a5468930d2a09fb0b2c3ff659a
+    digest: 193974df2a3ef85042060af46b1a1ce31326a336dfb2cbb99b14e36314596477
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -675,7 +704,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: 251d55bc96b3d7cb816e27bd9e68950f64436c8fb719ce2e74d2d6f59a210262
+    digest: 97b6b73da36786f2899180a0e1d0be3f421d67f718795eb98cdb7cf974e8de32
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -691,7 +720,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: 0330c98e5daf2c67c582cd199e05b7ca26fc405ef259c8079d06df3e1cbf7c7c
+    digest: b50dc21d73a71b15d845c0ab9502e346c000e396ad1f810c7bc12e1c6d044c05
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -707,7 +736,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for deploying Istio gateways
-    digest: 11c2d7feef4ade40dd506fd7d28133aaf98547477d390f2214c21dc2cc7403f0
+    digest: 250bb1e1948f2674135e8d96abdeb276c1c580e56a815407727a8618c8703e8b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -723,7 +752,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: afdb62ab5647b134f6931601cac9014b7b001fe782731371fb4d24a8c019590a
+    digest: 62b7815e723dcc2641a142daa4389aa90f5a8939749ca9209cfb08adb271810e
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -739,7 +768,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for deploying Istio gateways
-    digest: 857cfe3214271d7c690ac92a05282649e470d747952835d5f7051dd20407d44d
+    digest: 93d1c2cea73a50aa8836f95a6252eeafe4e2a008f3ba9aa6f6d20d801ba3b714
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -755,7 +784,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for deploying Istio gateways
-    digest: 3217521bf6664d4490d1f7ca72d2135aaee4b82e3e1783f40ab33640157b332a
+    digest: 156cfb9e7c87a93f3693b14033edb1af6e956882417908e086b8012f2642ef1f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -771,7 +800,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for deploying Istio gateways
-    digest: af32b5ef0a669c4986248e6dc5f43381a93ce28f565eaae335dd1d3b89a75f9d
+    digest: 52d4c24a3a5383ae6267074b4ba6a38f9312d5b20f7e0a933ad7334d7f541db8
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -787,7 +816,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for deploying Istio gateways
-    digest: 21175b74948fcaa76b356b708d2ddfb20fe8533492ea9b8e48539f75959dcf80
+    digest: 4239056a013e91e4a775c5c03f0acc5aa9146f4763baa9f913043bfb6bbc7547
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -803,7 +832,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for deploying Istio gateways
-    digest: cffd07d766e4c652dd6183dfc3e2365df3dbd3fe54eeba3b40b71af5c692a5dc
+    digest: 78be545d0134ffd0ee3f8e02290e60bd770d2c3e51c0f4f6f337719663466682
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -819,7 +848,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: f7ddc08fc05e46b03f33426677547cce7d113c74b5cbc40e9629d1cb9aa1150e
+    digest: 2a9aefe7691b482b14e0e49e13d61dd57556ec46a873d1d479a2a3421c84cbfb
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -835,7 +864,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: f6caea96db8d40ae974c913c591c73957b17de663ac7609e31ed969226994c64
+    digest: cfd2d94b289d88f74315806ac5e78ff8ebabe90e0a4f75bcf32abd23535aa320
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -851,7 +880,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for deploying Istio gateways
-    digest: 605a867a2b98c7d10f995e332f7bbcdc14e23b2f8dc2af8bd98d3adc53736cfa
+    digest: b01af244cb7650103f190d2a20120143adb8dbbba71fb2235c720bca9db202af
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -867,7 +896,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for deploying Istio gateways
-    digest: 4385d0e873d401b27f856df068afa5966c8ba75585fc42981c25ecb71add6c83
+    digest: 1691bdb03334c0077d44f8ec6e7ef6b38248c5057a4ade6bda6bf5aec7f17535
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -879,12 +908,28 @@ entries:
     urls:
     - istio/1.18.3/gateway-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v2
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for deploying Istio gateways
+    digest: 11d33f92d2af12f03c02ed216a942518956330db6416292c0c3974e4d5238bb7
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - gateways
+    name: gateway
+    sources:
+    - https://github.com/istio/istio
+    type: application
+    urls:
+    - istio/1.19.0/gateway-1.19.0.tgz
+    version: 1.19.0
   istio-default:
   - apiVersion: v1
     appVersion: 1.0.0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for istio default revision components.
-    digest: 50b2d585adc48620cb441d96c32fa8f113829874801c3dd0494a0f99ebf160c3
+    digest: 64c884486dd799e65742bb66bf5687c6c41159a73d382f94d8c2e299e2699e62
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -898,7 +943,7 @@ entries:
     appVersion: 1.0.0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for istio default revision components.
-    digest: d26fc74a9e3e51a98fc4208e08219dc78338d15ed5dec319fed00500c137f6e0
+    digest: c79773af28c0ca804673ab0b5e70b9c2615860ad0730f5a216da7a7afbd052e0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -912,7 +957,7 @@ entries:
     appVersion: 1.0.0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for istio default revision components.
-    digest: a5d25a82b11fd869d5bd20db79199090143ebb91f0acb98d821b8cb79c434ea9
+    digest: c65772b4f7b1d3c857f4f6cb0ebed5bf8477f665cae0b404da4b58958192b114
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -926,7 +971,7 @@ entries:
     appVersion: 1.0.0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for istio default revision components.
-    digest: 59b9f49fcb96c2859177416c0da18477da96096206c0a2c9dad7fcc0f948a52d
+    digest: 60a886eba9d20f5e8244be7c57f94ca08ce92f6767bdbc17099006a8e498c990
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -940,7 +985,7 @@ entries:
     appVersion: 1.0.0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for istio default revision components.
-    digest: ab4f76a3188af630a04bd95e8772e151585df15fd9e63d2a004428d8ee9fc4b2
+    digest: 7851f2d54c11b7e9e46c313a70e036e40a7ad98dfaf62080ffa9832329782961
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -954,7 +999,7 @@ entries:
     appVersion: 1.0.0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for istio default revision components.
-    digest: 43f8975ff789cba2b300a2e8d822004f0d0945d9cf28a4931862832bbe75c172
+    digest: 8e3f80bd889c345097f6585dff3980d58765d827e475217269f60dc2058ee27c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -968,7 +1013,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for istio default revision components.
-    digest: e8a95fa4c53dd3b369405b46b2fcde74dbba2aa3610e5efab18be5d75ec4222a
+    digest: ab64846e9e8f2d6c02501205685e1a2934934b9e21c6f57bf13536903586c3fa
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -982,7 +1027,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for istio default revision components.
-    digest: 2f854c51916171b13391bc0f3c80126eb4ed7b6cbea6b673fdced8b354394c41
+    digest: c2adc856f75d166d6db0287ac7b9ff93453c195316bb0ca8f9114d2ebcd406ba
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -996,7 +1041,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for istio default revision components.
-    digest: 03c6d4750f022e49d34d7e5a46bc28d5d76287ac6534f027f731ae627d24204f
+    digest: f6f76200a7a150d3dd011e468172487d50c6c3a627797e921e19fdc4a69b5be3
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1010,7 +1055,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for istio default revision components.
-    digest: fd19da4c3a7c280b88b5230a69c619f53a8b717b780c3f18c8ded98dbbd21be3
+    digest: 23935c21055dd88a933b71e26230299e7612e2108695ea53b04081b62f8d664a
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1024,7 +1069,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for istio default revision components.
-    digest: 9b17e8020497597c67fb71bc6492fc78c43a3d572874b38b1257e8f9b7e1765b
+    digest: 3d79153add5921dfa5073334d360185dbfd80bbcf3a29dab0d26461ec9a73a86
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1038,7 +1083,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for istio default revision components.
-    digest: b345bd753ba2d26f206b3866e3f36959f7337439b408969ea4ed15c438886dbd
+    digest: cfd12de3aa2a45b3280c2a591d0fd8a47df30c8b4024a207b8714fb6868ca5ab
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1052,7 +1097,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for istio default revision components.
-    digest: d52a037feebdc26f112be7b2c2d284217e1a0441234c9d1b1557b3be2056a2d0
+    digest: 38cce5d85f3dc554b7b5a12b10878fca6fb00eb89081ceff07c5deb82ebb34e2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1066,7 +1111,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for istio default revision components.
-    digest: b7ef9cd3a771bd17223812703475bf51520b897b56606364006f2aa0fb83a02a
+    digest: 115bd5d1d8c9e580d29b67bbeeb9809f14ec1b2388a327d1f6c3aa5233ff70e0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1080,7 +1125,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for istio default revision components.
-    digest: 17b39b6da610a778bc862a762c550d53f5341b9a33d2e1248985c29cbf543b45
+    digest: 0fb2b047d65c2c930008d43848eab84fd292249011e20816d0fd609ad4b43e2a
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1094,7 +1139,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for istio default revision components.
-    digest: 846f1d9b7aca3167ea38bb9da146e4ad46c3ecc88e0dc71779fcff3c7326d702
+    digest: 6095ee9ce5664ea3997a685fdb28fcdfed229c965b3da2233dd57474285a22b0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1108,7 +1153,7 @@ entries:
     appVersion: 1.0.0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for istio default revision components.
-    digest: 9836f1e36781acdb8200dd6b7c351ec5c080b939ca5619afda7009922ef6247f
+    digest: b383abc39fd0f0bf440bdf3559c8fb394898c82378816a0a5d5edcdcbfbbd8a7
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1118,12 +1163,26 @@ entries:
     urls:
     - istio/1.18.3/istio-default-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for istio default revision components.
+    digest: a667e6baf9f7c951e22765493c05addd243391e32ee01c220b2e225ae2ff3d61
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    name: istio-default
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/istio-default-1.19.0.tgz
+    version: 1.19.0
   istio-egress:
   - apiVersion: v1
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for deploying Istio gateways
-    digest: bbadd95faee7fcf8af6c7537e75fed4d30742243901c48b77b95ad6ef122de50
+    digest: 3c36a5add767320fdd48096fd09f3e1a7b190757a0efe5476d3d972558962bfc
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1139,7 +1198,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: 13f363a5e5e4871b0cf6514a0df633bb00cc1c2099e9d16a9bc941a006f6f93e
+    digest: c7668a6343a14c5d584dbf72a0934ca786856b094c146e81366e07dd5bcfb0d7
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1155,7 +1214,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for deploying Istio gateways
-    digest: 16859ada700ebe4891b3160be211afc88825198e9632972c6fc1d5d5b1aa718f
+    digest: e5e7d147c05f6f7239953b8e5bed2180813330fab6de8e6eef008b23c94acb93
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1171,7 +1230,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for deploying Istio gateways
-    digest: 7a00bb0661c10f775400ac2c535549955d0e6c929051fc4298df1b66d797759b
+    digest: 520146045d433d8b0c996e20559e32d0fd936f744d240595b92759726378cdb2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1187,7 +1246,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: 401223c53c1d2b9c2e2913f8b8654ca95ed20667e11a5477bd38639c5c5581d7
+    digest: 8c65c51669562f6daf7324d3982557f8c1c76e2d8b49f1c78a672f2b4a66e576
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1203,7 +1262,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: 63dc32b414c51d4de4ea95648aab7748733e96e1d142f284bf235240656c3e6f
+    digest: 1ce4868234dd424aa3046a813129dfb7b81842676dd2f110648356b3f4688a5e
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1219,7 +1278,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for deploying Istio gateways
-    digest: fa0ae71add41fac9419e13e72b416bab7182b7f88040dc0929e9bdfaae6e78ff
+    digest: 63ce359f55a76c1cf8c8d68c64c2a984e67b948b837fe76c255acb17110f8e27
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1235,7 +1294,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: 196e2da035893c6df0f8686cbe775aeaa1303f24c43819d2bef2853f4270ae88
+    digest: d27d6a4020811c6ec2305e32180e20aba47ad692e950fa16dcaa7f59848df89f
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1251,7 +1310,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for deploying Istio gateways
-    digest: 3cc823ed28bc23d8bc153a3cfe337efa7b75427ef155f05da16737c46c5046a7
+    digest: 05cb199c8775f2eacbf4f91fd26a7670e1aa3d666919d0c739caf8302291de61
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1267,7 +1326,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for deploying Istio gateways
-    digest: 9a2277decc751475a9a24f344feebb664d2d067ae1442d4dd1b53934d783af5c
+    digest: a60778f9c181cc4f5c6593b6e51fe3a6c792cb4a4b7e7ab6fc14864facc816cf
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1283,7 +1342,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for deploying Istio gateways
-    digest: 2433ed9688a1f1fd20209929e2e150cbbeb7ed9f85b629558494a9e2013f2189
+    digest: 7f6ee565f72091a4d43c078f5e43440334cb76765b7d8ea04fa82081a6879c94
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1299,7 +1358,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for deploying Istio gateways
-    digest: 57131bad338f64c25555bd2f4d9351a0d9313d53d3d20841ae1d2837677350b9
+    digest: e87c771f601300f4e7f29b1833045d58021418989c69e3d975dad52fcb00f848
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1315,7 +1374,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for deploying Istio gateways
-    digest: 5496fb75016047acda8b4bad33efcc935a849576341a3c8ebb422b5d221ec217
+    digest: dd01ddbb7518d3f0ead7a4719bdb5160a32ded9bc3257e24c1dd093e12286bd2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1331,7 +1390,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: 595f594e7c4296cdce33916d42f508bda1cde048672948e9740f2f14d09bf602
+    digest: 730c6773386e187893cd0911aacfaa9f47ed9767f344c4fa8f35eee96c921b9d
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1347,7 +1406,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: d29d96e5347c0a918ad4aabc201b7e943a6332568ba5089b4f41c0d43582727e
+    digest: 46bcdf32be867c59b5fa767dc543e762b9c57f424c975b304e219e9424f5c054
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1363,7 +1422,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for deploying Istio gateways
-    digest: 9a1c299552b7bedc1a3188a34348a3f74bd3b9af28a0c62ad1c6eafbcb63fb4b
+    digest: 36f1dfd5e3f7df521c4149a8323115e4beab7882253119a43d6ed40b2da9f001
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1379,7 +1438,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for deploying Istio gateways
-    digest: 586b393374f2658124cff56dd215606cd5a67897cfb56e1da92ffeb92f5e49e8
+    digest: 556f62c356fbfa4d48da47f36b61edfc00079a521d1b42de15eb0d7cef0e3256
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1391,12 +1450,28 @@ entries:
     urls:
     - istio/1.18.3/istio-egress-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for deploying Istio gateways
+    digest: f629525693aa8dbf3c46b59f559926312064b058b1df4c14b9f8fd5c61534be3
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - egressgateway
+    - gateways
+    name: istio-egress
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/istio-egress-1.19.0.tgz
+    version: 1.19.0
   istio-ingress:
   - apiVersion: v1
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for deploying Istio gateways
-    digest: 8341d5ee30819b377870e23021fd3d33b0ef751e83146e8b1225bf37ac1893a6
+    digest: 4da1e46e2c68415e82d1bebbc3a2440a4f3743a8497497a811d91473a983c582
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1412,7 +1487,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: 1751f048e8e246a5fbd57b2c54eb8950c3bf80ad3f788c8b809d9133d26e1e87
+    digest: 88e56db66cf72684c6ffc5285cd09d4c7ef41900daa75ea0af0b05936f3e87e8
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1428,7 +1503,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for deploying Istio gateways
-    digest: aedc8ae2625fdee9c87386f42e99cc57c087feebcc2d39d07daa6c506861ef33
+    digest: f9f7692eb535f8efd5999f9c2a7722381146203ab11adaec66fedf1232b440dc
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1444,7 +1519,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for deploying Istio gateways
-    digest: 7f7bd0456c122a57052453ef42996399519716704450d538820dcb2969f3a5c1
+    digest: 847fe91fd92a1422ff4b390a32283348960ad829662dc243f14b570d8076e00b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1460,7 +1535,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: 34b661c1a83b4fc28b60d966797c9fe4a18726753f3db5e5feced8fab4f8b46b
+    digest: 3dc98b8a00d12ba48c1095f0c44b72830b6ac24d4dacbb24e4977d17d9acf909
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1476,7 +1551,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: cae50827e47649c4f9026c88a2f2c6a985d03f50dbe29452e83d84f6b1a02bda
+    digest: 72ad9111f8407285a11f3d911c9b0b99e4465b5a7cd3f356ed2546cef29352bd
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1492,7 +1567,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for deploying Istio gateways
-    digest: 9a9e8dee586fc2dab103d40e4d2db3190cb2ab584298239bca9b73baaad36c12
+    digest: 19890f62d121b0d7132bf747e8aba3b168884cde5186454090dc4f1357addacb
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1508,7 +1583,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for deploying Istio gateways
-    digest: e5b5af358a40755ee3b80f6fadeb816931fe4381fc70cf856f9a23e6b701f113
+    digest: 5ec2aaeae534eba1a2901b011740e6245950088f9ea2dd6d5e91e5d6962128dc
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1524,7 +1599,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for deploying Istio gateways
-    digest: cdd9473edd3740c9c9b4f18f2850f554fe8886d39ab7f26f666286e35ef8ddfd
+    digest: 4ed83bca70cfc8176f51252c922f7b46304b5bf78d57782a4d2e9abf4cdc1399
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1540,7 +1615,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for deploying Istio gateways
-    digest: d2130a1918d44278c5b8ceec0e92bb6cee93bda7b64ee45057a90716828102dc
+    digest: d99c6adeb5b090aa1cc80d87412f7538fe670191772a94c58b9d4f1f6d423a96
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1556,7 +1631,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for deploying Istio gateways
-    digest: 371222f9bf5b8cde7bd355c94be0c022b7e0a8657a55a2ac675cb60a5ffeeea6
+    digest: dc9024edbe115210eddaf395afacf92b4de479630de3051d471c18ff69aa61f7
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1572,7 +1647,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for deploying Istio gateways
-    digest: 87d78a342f3363c09e80d28e89e34191e8d77be440bb837c5e60348807bb1e54
+    digest: 5347170e7afda73a80962627fd9f957160db55bb4d3d493547d17624509c033c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1588,7 +1663,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for deploying Istio gateways
-    digest: 2155290ccac3247f25c60c4c14639115f42b9f5a6da0b5e775fd3204d5c4af70
+    digest: 3cdcd4423950970b954150e6aa3e0711ff2c284d662af3b6fc83ddb9557b248b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1604,7 +1679,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for deploying Istio gateways
-    digest: c44447c63cec61355ce6769030829e7ab7bc85b6f4f98a8cc7e099924cc998d0
+    digest: 2ab7fb2c642c5899325855dedce5638f69c9e311fa6fd67e3c04a76f454eb792
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1620,7 +1695,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for deploying Istio gateways
-    digest: 511d6e5db90b8a7105995cb0c66d96deb76bc896424c35aa4c93f8a0021b40a8
+    digest: 8ece06c889363ee5c9d8473b72ba7bbfae691b9d3455c4215479d2f0104993c0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1636,7 +1711,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for deploying Istio gateways
-    digest: 8715eaeb0e1efb680c3b4a63766c4204eb8cdb1c3f2a1554bb66c6c99f001b8b
+    digest: f62f05b802a5323e8f7a71d6f9bd8a0276dc846a4c3b5dd1d106edfbc279dadc
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1652,7 +1727,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for deploying Istio gateways
-    digest: d57ba913698e30dd895c6c2df53226630843b052365c151b33c05c52536e21c4
+    digest: 3c76ce9789d72a05c57f25cef9ac6d17e332aeb0c77535add0ee9ca8b1c7f118
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1664,12 +1739,28 @@ entries:
     urls:
     - istio/1.18.3/istio-ingress-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for deploying Istio gateways
+    digest: 28b92051f3c01e726b61b346a19329b89d78800260447e84b37e48261155c144
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - ingressgateway
+    - gateways
+    name: istio-ingress
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - istio/1.19.0/istio-ingress-1.19.0.tgz
+    version: 1.19.0
   istio-monitoring:
   - annotations:
       tetrate.io/addon: "true"
     apiVersion: v2
     appVersion: v0.1.1
-    created: "2023-09-20T03:07:06.157338553Z"
+    created: "2023-09-20T03:32:38.568742375Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -1690,7 +1781,7 @@ entries:
       tetrate.io/addon: "true"
     apiVersion: v2
     appVersion: v0.1.1
-    created: "2023-09-20T03:07:48.137162572Z"
+    created: "2023-09-20T03:33:18.769223294Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -1701,7 +1792,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: 19.6.1
     description: A Helm chart for deploying Istio Monitoring
-    digest: e60cb06df278f6ef001ae35a132f8b5700a8e9aea5feb75611197956ee04ea64
+    digest: 8622e5cf9082949ea6df879cf50ff3455c39fb30396f69e9d861b19290ec7906
     name: istio-monitoring
     type: application
     urls:
@@ -1712,7 +1803,7 @@ entries:
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for deploying Istio operator
-    digest: ac1ab3873fc3f69e1221b86005839d056288f4e14f958e6aeeca99244c2ff1c4
+    digest: bffc8e675549c3f3500ca70ef15a54b8a967df5fc9ca12588c1d6f140ae59a03
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1727,7 +1818,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for deploying Istio operator
-    digest: 81fad89954e569de9e7412cccbbad3d3e8552a55f64af0c7022c0ef94e60df36
+    digest: e9248d02017eb8980e663dc4e46212e9349c3f3f15a2bce1ef780935e791b9db
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1742,7 +1833,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for deploying Istio operator
-    digest: 50711ac655d8ecd6ddabe5ee3882953e946be9e8a034814dd3659121c377dd5a
+    digest: c8541b6c3f5b4f20d765d3fd2da997eb9349b6d872e018996fcbe37c3fb6f3b8
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1757,7 +1848,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for deploying Istio operator
-    digest: 72850e1dc857bf233cc41807ecd985d3e839a0a291abce97afb4999283004b87
+    digest: ddccedb4a892b5728af568d264d04e25cb70ce60a047128a26bb63f6977dc9ed
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1772,7 +1863,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for deploying Istio operator
-    digest: 5034da33de915a49403f1c2b043835e958dfb1da9c2ab0fe3222924624247a61
+    digest: 2fac9e0e0adcfc6f3ccfe7d2052a8b86689e045fb9f7acece225212d530f0be0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1787,7 +1878,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for deploying Istio operator
-    digest: ee36ed56ec5ed50179058f19866453bd06d3d58f5095cc620cb9bd597fc526f7
+    digest: 2c7cd345a6b55ed6567a7c59abe737818ee1d5b7073c186138a48d37abb57c73
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1802,7 +1893,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for deploying Istio operator
-    digest: 0387e2405f5d2c6b46e08c291ead2f56b39a24dd601ee75fe2581ef18efdcc19
+    digest: cbd881829294b616b258bf53baf37902af2aa5c9dcdd92fb59209553887d0d89
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1817,7 +1908,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for deploying Istio operator
-    digest: 09329b2aa00abd2a14732bfc97e754e9e858ff4146ebbab5c964e52bf3b51305
+    digest: 6c0242c115afef10de23f3b55e74afe7e1ee79d13514db5494c75f5ed7e456fc
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1832,7 +1923,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for deploying Istio operator
-    digest: e09ef0f7ce9d8ef55bc079dc9f405b04fcad61f5893eb90869b3fa47ffa8c13b
+    digest: 611d824c462ee396d7ae9676422075cfcbda33892727b47db5d404cb7f2c4a95
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1847,7 +1938,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for deploying Istio operator
-    digest: 6e9115da7d3df8afcb4d204b95a4f60a02631fced02b3cbc21694d2ccdfa0616
+    digest: a1c56cfc7622888089e202925a796ad98a96f51a70d3f99f672a0519d45fbaa5
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1862,7 +1953,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for deploying Istio operator
-    digest: 50a248dd4c294eda79cb16a7b236e40fa3491f4a60e6aacdd334525d0ad0d2eb
+    digest: 0448345cec2371c22e4aaa9da963899a230209db6df3b269ad3909815b5003f3
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1877,7 +1968,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for deploying Istio operator
-    digest: e7731c2387b142a3b5eae9d7f424f0e7f97febae9e569ff5ee1b23346cc73dbb
+    digest: 9dea4b4949196469db05c933902ffc4c3dab73cf43e3ce782a194ea19fdfefa0
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1892,7 +1983,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for deploying Istio operator
-    digest: dc4665660ced669b480000c97ade5de5b51fdab59825f7f6f7492946112c191f
+    digest: 39c4b3119c33753e219c3a5dc0284118a24aa4be070f1023b709a4d5da8ba16b
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1907,7 +1998,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for deploying Istio operator
-    digest: 3aebc77a0a59f1c0f65c36594dd97263dfcecaf52a89caf3d6da678b55dbc3bb
+    digest: 0bf34869357dc52df7bfffb1130f95931dd34c3470e8760fde8e53557422bda6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1922,7 +2013,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for deploying Istio operator
-    digest: bfb728e42e9908f349a3df7ee461528a61f4d8729d7126de6b1eef58ebad3e94
+    digest: c279280c45d1f1fb0902b4dba2236e209bfe2ba2a1aa1713caca60a0d598c208
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1937,7 +2028,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for deploying Istio operator
-    digest: d48f023e2f896c76d04364e2f405f54e08d09150aa93fce4bd6bc6984776ff19
+    digest: bb0e32c952f4a05487bf0395dc51423959bd8ab6a9719cf0c0af2a4e26f2c6c6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1952,7 +2043,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for deploying Istio operator
-    digest: 098d5b52e95f15453de45f4eaaa30520a0fc47af4b677187786bc8b742f362f8
+    digest: 2c10f4f6ef7b8a70b8e68f6358e8f83fd5a5849727afb34ad8ff08f026d88dc6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1963,14 +2054,29 @@ entries:
     urls:
     - istio/1.18.3/istio-operator-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for deploying Istio operator
+    digest: c3a5f0f27c6841934086ef9a8c49cf9a80916ca8e1746b64f06580b09d143949
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - operator
+    name: istio-operator
+    sources:
+    - https://github.com/istio/istio/tree/master/operator
+    urls:
+    - istio/1.19.0/istio-operator-1.19.0.tgz
+    version: 1.19.0
   istio-registry-sync:
   - annotations:
       tetrate.io/addon: "true"
     apiVersion: v2
     appVersion: v0.3.0
-    created: "2023-09-20T03:07:48.137162572Z"
+    created: "2023-09-20T03:33:18.769223294Z"
     description: A Helm chart for deploying Istio Registry Sync
-    digest: 7c53e6146e0f2624f635beb7d5c25aee8f9019255f121c01b02fdbb437579c94
+    digest: f2c4eef3bc2c79fb7cc7a476a53c8cbff1c5b60fde6fff3b4c31603846c71617
     name: istio-registry-sync
     type: application
     urls:
@@ -1981,7 +2087,7 @@ entries:
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for istio control plane
-    digest: e94b5f5e0ebc47a2d590e4ae1296d629dff775aac0d329614c0a95d910578493
+    digest: 4c147318221d5f5ccd60e18a1479a55333c3385e712b522de923ea48aa6fd7ea
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -1997,7 +2103,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for istio control plane
-    digest: d128c87a4f56df6d3424bf7afdd667a5d0adbbddb3ef2c7fe9256df7c51dd2ad
+    digest: 653a0df7df968ec35a4719babe06a4ba07041e3f55d17cd442b564634e0b2d3c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2013,7 +2119,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for istio control plane
-    digest: 2a0e5f19a20a264e2107fe8314295196484dfb3adcc71ba5edb97cb24495784f
+    digest: 74dbbdd868788c4e38e5bca311fb1a9929e56f6c479ba85949541948f884b6ba
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2029,7 +2135,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for istio control plane
-    digest: 1f3fd3503e73c6d6d08001ffe7b06d0746f066d63a762a46776927c922e7889b
+    digest: 8b0b8e552c4d2053dbcb3721c56af85dbeb2377c9b4930bc77ae232cfdfbfc54
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2045,7 +2151,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for istio control plane
-    digest: efb2ef14ea450d287cb6d8aecd392a8f1fdb1632f64b384771cf8e890186dfd2
+    digest: 72f7c3d401211679a51b531ac18ce44b9a33a4779df1bedcf38b7ced8729572d
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2061,7 +2167,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for istio control plane
-    digest: 17985fc1ad2f506fe2d94042a5a51afee45826eb2d496753238fe1eb88bfe42c
+    digest: 433edbcf2e589d88014b6f7a0eb30a0a00c658a68b88f2a9501a7e650bc647cd
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2077,7 +2183,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for istio control plane
-    digest: 5a9bdf0a2655622b4e94ed593196de35fc648f2b6a126120bfd563b7f422e39b
+    digest: 355b5b196a0710d1e4878c2d3760481bfd82654b2d5e31728e49736b9f31bb83
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2093,7 +2199,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for istio control plane
-    digest: d83050673dbd044d506e29ca3dc35e6f636347a269e7e08549ab8d67fde6dac2
+    digest: 2e40ab17e46458204788631ec407983cb251ce9aa5c11e116f53a0124a0a5537
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2109,7 +2215,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for istio control plane
-    digest: bae71f72c13f3e2c094ef86514515328ac39935fb499fa82753ea681aba4e5d2
+    digest: 7e0261ab1d790260d3932e6c2b7ddb45edd8aa7e05714476057c12e8b0449b57
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2125,7 +2231,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for istio control plane
-    digest: 692beafe62ed61af1e3e74e3ecabf639e252d0b1cdfab9745e02d49c26bb1dc6
+    digest: f69dab2fdcf7682c856c8e8bd6106ea59720cdcc56c0ac0b675ab3591992395e
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2141,7 +2247,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for istio control plane
-    digest: fefe6ed9d4c0ec38b987c9da9f22e8144f7c9769a4a64c3a837e0e80f0b5deb7
+    digest: b6d2e8d5a37ba88b1bdfb44f13b9202ea431f6b772b93d899c3f2798953c65ea
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2157,7 +2263,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for istio control plane
-    digest: acf9d37569f6b12d3cd6332c10919dcce5fed0d3e161417b4eb4915339d69a11
+    digest: 596783a75727dc59fd443d46c4288a6fd273305894799f3a60b4be8942595d13
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2173,7 +2279,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for istio control plane
-    digest: 0bcc401ec38e2af7ce369fcd461f6e8713e86ef94d47b6d87a0a71e612edb566
+    digest: b13a166006daa3472e7a0a9024db5f19860bb39e292c7d9a2912c27548a533f6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2189,7 +2295,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for istio control plane
-    digest: ffa259d8508bac24a1327bef6ed8401c2efffddf219586ec74035f1bb01be6bf
+    digest: df52a6809689a7bb48eb4ab0f8813bd79e2a130356491b80aaafc60f789ed2f7
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2205,7 +2311,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for istio control plane
-    digest: c7f62da634f4aad936865f373f8644c43c3e8f21454a2814883d5fd11ef1619b
+    digest: ef97cd752114523c5225d26933ccda73a3076a06f1083f97a6a8b530d445dfb4
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2221,7 +2327,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for istio control plane
-    digest: 7e479e26a481dc8b1134cd5a4aa95d7704e50bd1aca1c8c79cb7c676830629d4
+    digest: 2eb95edea3e87e5d94020e022a0d5b969ea5a5ef976da1abc9360fb7154245bf
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2237,7 +2343,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for istio control plane
-    digest: 174fd5155f241b20d67acfde153149cf1dd1ecb08a774efc71d43b11133a3e60
+    digest: c15cd720c5e2ab12f4ed18ff1748fb04949a602f7a91e03970ac47985839add4
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2249,12 +2355,28 @@ entries:
     urls:
     - istio/1.18.3/istiod-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for istio control plane
+    digest: 6c4c347313903e2a3f54b6ee3ed0f89a335ce695cf95a391ed016c4a2f62ffd7
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    name: istiod
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/istiod-1.19.0.tgz
+    version: 1.19.0
   istiod-remote:
   - apiVersion: v1
     appVersion: 1.13.3-tetrate-v0
     created: "2022-05-04T21:03:38Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: cda4fb3c59122997b7fcab654e6e19c6ce324417aa054f1efec38c01ecf9eeb3
+    digest: e001a3d768268d23e424b1e3657f73b0b315b755e5615666a5b2abcf141f3259
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2269,7 +2391,7 @@ entries:
     appVersion: 1.13.5-tetrate-v0
     created: "2022-06-13T16:19:44Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 8125914047a43232ef63986034bc5caed8731135721f3fd6006d1fc94a54f2ee
+    digest: 923e3434fc1a94e62a137b4f5ce46752fc26093f721e4a6317472c084380b15d
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2284,7 +2406,7 @@ entries:
     appVersion: 1.14.1-tetrate-v0
     created: "2022-07-07T15:27:26Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 4d55bea5620dfcfc0cd7c27b75607488494e42c1a9a902fc468c71fd740bf1c2
+    digest: 41116a134e32536aaa661244f5f07a4bc05b279d4c623b6afe6f4eec9c9ce562
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2299,7 +2421,7 @@ entries:
     appVersion: 1.14.3-tetrate-v0
     created: "2022-08-05T15:02:57Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: b842a3f988d02ff30eed6eebd2d0c9c488550d0f24fdedf4c9644e1c447f1c5f
+    digest: fa09acd0a412d7f9cfcdf312c662500160356c49639069af466246079a433673
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2314,7 +2436,7 @@ entries:
     appVersion: 1.14.5-tetrate-v0
     created: "2022-10-27T21:03:09Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: d17623c57e5b5e36ca01a8add02137eafd0fb2919cf49a1579ee3ff5b7ce4e71
+    digest: 59982792dbc21cd4c68850f57315db560b05b5b3b789a1cd66fc69e558071889
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2329,7 +2451,7 @@ entries:
     appVersion: 1.14.6-tetrate-v0
     created: "2022-12-14T19:21:21Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 1737e92928b450843061b4ae517a1be2af94bead607589634427f3a5286939e0
+    digest: 24b9d81e0397767c13b080f72b0e05ab3d0dd5c09040e3d8348dae5a820f58e1
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2344,7 +2466,7 @@ entries:
     appVersion: 1.15.4-tetrate-v0
     created: "2023-01-24T00:42:53Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 9de6ca5d570f221a79d2bdb5130cf5bc227ff7b1e251e9e6da40ce0aef29888a
+    digest: b962cf557e74050956fdfdc40c74d621f765ec7ad20a81adc894fd07b209668c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2359,7 +2481,7 @@ entries:
     appVersion: 1.16.2-tetrate-v0
     created: "2023-02-05T16:43:09Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 9c4147b391f5d8e2ca8d7233f2040057c1f893b51488d425b1b570facb30dab3
+    digest: 45cc0c2806c043b642f6b85bb67ae192db57fada794ca4a47ac39e85c94f6ac2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2374,7 +2496,7 @@ entries:
     appVersion: 1.16.4-tetrate-v4
     created: "2023-07-19T06:52:29Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: f7ff1e2340f0a48955bba9832c76f2335b3b34fdec5f4b5ac8f279b33445f35a
+    digest: bbea1cf5e56b080a1029c8e1b9cd26cd37a695db944e1f6c6e5cedce0217c187
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2389,7 +2511,7 @@ entries:
     appVersion: 1.16.5-tetrate-v0
     created: "2023-05-26T03:29:11Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 2142fd344d0495320ef058b3438e35665d9a61211e450f34de9886ec2f44fbf3
+    digest: 1f59a7f218931c74451b97c69b44c0ad6b9b86b7b32b36df8165b8290bc31daf
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2404,7 +2526,7 @@ entries:
     appVersion: 1.16.7-tetrate-v0
     created: "2023-07-28T16:04:01Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 62d566f6d813f3bf0ed6ef4773c9d619277f0f7d6a5cba1c99c4bbd1a781f65b
+    digest: 8624fe2d51758c015b02d916c409136605025908c8bed7ee37047e757044ee3e
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2419,7 +2541,7 @@ entries:
     appVersion: 1.17.1-tetrate-v0
     created: "2023-02-27T03:57:23Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 059cd1e092e8a3788f75b138e7a1ab7713c8d46ff43cc19de5315dfee634f0c2
+    digest: eb985b52d42814731e896aeb47e95fdaac3b1c96c4e3ffd1806b4b99f038a9f8
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2434,7 +2556,7 @@ entries:
     appVersion: 1.17.3-tetrate-v0
     created: "2023-06-09T14:50:25Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 364702cecf2dce59665e1f50066943fcaee985d8d59a4d579c649dcac083ac77
+    digest: ea987440d803ec9d55280144561895445f4d6231d1bcf48a039d00ca066fabd2
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2449,7 +2571,7 @@ entries:
     appVersion: 1.17.5-tetrate-v0
     created: "2023-07-28T15:12:44Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: cc0a5144d8027637a86d2a448bb0d2a4c30d2aef902335316befb1f940ad89af
+    digest: 1d5e67a2e97fa02923baf15918eac7475b66700bbee46a49ff0d68e85ca1b1e5
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2464,7 +2586,7 @@ entries:
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 32a051be0ff39f08da05575c4e0e3f9f070b29403565ae9df1cc0fd756bec105
+    digest: 71c25093a7f77e5e13244964e15db1c8fa338db6f5fa536800c875784bc5895c
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2479,7 +2601,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 7c4cc60a578c6f57c9dc00ff353cc2cee168bb0b806dd1391bd88eb91bc647b8
+    digest: 2b47ace0e918c70643d08eaae8b7c949fc06524109c474ae68aa870c9ad2a4ae
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2494,7 +2616,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for a remote cluster using an external istio control plane
-    digest: 132fa43528257e0c015d9bcbfa0591d8e4195095504165d0104fa78072578605
+    digest: 40a5524f5a96e13898fa3103fcacc5ddf67d07375a735e26e1b833556c38cba5
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio
@@ -2505,12 +2627,27 @@ entries:
     urls:
     - istio/1.18.3/istiod-remote-1.18.3.tgz
     version: 1.18.3
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for a remote cluster using an external istio control plane
+    digest: f66bda76e7db8bf605f4cb4b00800877a711cf7a0103384bb2b58d899cf3d75c
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - external-istiod
+    name: istiod-remote
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/istiod-remote-1.19.0.tgz
+    version: 1.19.0
   ztunnel:
   - apiVersion: v1
     appVersion: 1.18.0-tetrate-v0
     created: "2023-06-09T16:41:21Z"
     description: Helm chart for istio ztunnel components
-    digest: 094ad280d01bf67df568674af014756e6f48a0eec0e9307bf28c0b9b7326c424
+    digest: 954d0269a5762f8adc85c682d1a5e098a70089d4fba8bc3bb4afa9201566f984
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-ztunnel
@@ -2525,7 +2662,7 @@ entries:
     appVersion: 1.18.2-tetrate-v0
     created: "2023-07-28T15:46:16Z"
     description: Helm chart for istio ztunnel components
-    digest: a87ad596fa41cc387a0b4aa6125e47c5eb7698c952b0c3702cefa363cc7c0ddc
+    digest: c6f2372009f95ec07de5fb0e3ae755e8511116f6c65bef094ffb8a3227cd40e6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-ztunnel
@@ -2540,7 +2677,7 @@ entries:
     appVersion: 1.18.3-tetrate-v0
     created: "2023-09-12T15:49:17Z"
     description: Helm chart for istio ztunnel components
-    digest: 84b90513af726562c6dd981ea8bd578dd7c8d05634fe8e53cc8007694bd87c68
+    digest: b22e7a8099ac6943ef9f5a8c4f25c89d5a3097d8b84406bc6c9e66a83c8145b6
     icon: https://istio.io/latest/favicons/android-192x192.png
     keywords:
     - istio-ztunnel
@@ -2551,4 +2688,19 @@ entries:
     urls:
     - istio/1.18.3/ztunnel-1.18.3.tgz
     version: 1.18.3
-generated: "2023-09-20T03:07:48.190628274Z"
+  - apiVersion: v1
+    appVersion: 1.19.0-tetrate-v0
+    created: "2023-09-19T17:57:46Z"
+    description: Helm chart for istio ztunnel components
+    digest: 548e371db995cbb08ad7035817343dbf6efeef4dc802eb5cacdd3a9c10fbc9a2
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio-ztunnel
+    - istio
+    name: ztunnel
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - istio/1.19.0/ztunnel-1.19.0.tgz
+    version: 1.19.0
+generated: "2023-09-20T03:33:18.820581166Z"
