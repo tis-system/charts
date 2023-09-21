@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"os"
 	"path"
+	"slices"
 	"strings"
 
 	"github.com/dio/magex/tool"
@@ -86,11 +87,19 @@ func createIndex() error {
 	}
 
 	idx := index{
-		Istios:  make(map[string]interface{}, 0),
-		Systems: make(map[string]interface{}, 0),
-		Addons:  make(map[string]interface{}, 0),
-		Demos:   make(map[string]interface{}, 0),
+		Istios:          make(map[string]interface{}, 0),
+		Systems:         make(map[string]interface{}, 0),
+		Addons:          make(map[string]interface{}, 0),
+		Demos:           make(map[string]interface{}, 0),
+		IstioVersions:   make([]string, 0),
+		IstioFIPSImages: make(map[string][]string, 0),
 	}
+
+	repos, err := getFIPSRepos()
+	if err != nil {
+		return err
+	}
+
 	for k, v := range indexFile.Entries {
 		for _, chart := range v {
 			if containsAnnotation(chart.Annotations, "tetrate.io/system") {
@@ -101,6 +110,13 @@ func createIndex() error {
 				idx.Demos[k] = chart
 			} else { // Seems like istio in chart.Keywords is not reliable enough.
 				idx.Istios[k] = chart
+				if !slices.Contains(idx.IstioVersions, chart.Version) {
+					idx.IstioVersions = append(idx.IstioVersions, chart.Version)
+					idx.IstioFIPSImages[chart.Version], err = getAvailableFIPSImagesForVersion(repos, chart.Version)
+					if err != nil {
+						return err
+					}
+				}
 			}
 		}
 	}
@@ -129,11 +145,13 @@ func createIndex() error {
 }
 
 type index struct {
-	Index   json.RawMessage        `json:"index"`
-	Istios  map[string]interface{} `json:"istios"`
-	Addons  map[string]interface{} `json:"addons"`
-	Demos   map[string]interface{} `json:"demos"`
-	Systems map[string]interface{} `json:"systems"`
+	Index           json.RawMessage        `json:"index"`
+	Istios          map[string]interface{} `json:"istios"`
+	Addons          map[string]interface{} `json:"addons"`
+	Demos           map[string]interface{} `json:"demos"`
+	Systems         map[string]interface{} `json:"systems"`
+	IstioVersions   []string               `json:"istioVersions"`
+	IstioFIPSImages map[string][]string    `json:"istioFipsImages"`
 }
 
 func loadConfig() (*config, error) {
