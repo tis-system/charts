@@ -116,6 +116,9 @@ func createIndex() error {
 					if err != nil {
 						return err
 					}
+					if idx.IstioFIPSImages[chart.Version] != nil && len(idx.IstioFIPSImages[chart.Version]) > 0 {
+						idx.IstioFIPSVersions = append(idx.IstioFIPSVersions, chart.Version)
+					}
 				}
 			}
 		}
@@ -145,13 +148,14 @@ func createIndex() error {
 }
 
 type index struct {
-	Index           json.RawMessage        `json:"index"`
-	Istios          map[string]interface{} `json:"istios"`
-	Addons          map[string]interface{} `json:"addons"`
-	Demos           map[string]interface{} `json:"demos"`
-	Systems         map[string]interface{} `json:"systems"`
-	IstioVersions   []string               `json:"istioVersions"`
-	IstioFIPSImages map[string][]string    `json:"istioFipsImages"`
+	Index             json.RawMessage        `json:"index"`
+	Istios            map[string]interface{} `json:"istios"`
+	Addons            map[string]interface{} `json:"addons"`
+	Demos             map[string]interface{} `json:"demos"`
+	Systems           map[string]interface{} `json:"systems"`
+	IstioVersions     []string               `json:"istioVersions"`
+	IstioFIPSVersions []string               `json:"istioFipsVersions"`
+	IstioFIPSImages   map[string][]string    `json:"istioFipsImages"`
 }
 
 func loadConfig() (*config, error) {
