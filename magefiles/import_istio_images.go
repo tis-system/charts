@@ -9,15 +9,6 @@ import (
 	"k8s.io/utils/strings/slices"
 )
 
-var repos = []string{
-	"install-cni",
-	"istioctl",
-	"operator",
-	"pilot",
-	"proxyv2",
-	"ztunnel",
-}
-
 type catalog struct {
 	Repositories []string `json:"repositories"`
 }
