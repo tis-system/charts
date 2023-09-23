@@ -28,6 +28,9 @@ func importIstioChartsPerVersion(ctx context.Context, version, tetrateV string) 
 	if len(tetrateV) == 0 {
 		tetrateV = "0"
 	}
+	fmt.Println("generate installable for", version)
+	generateInstallable(version, dist())
+
 	name := "istio-" + version + "-tetrate-v" + tetrateV
 	targz := name + "-linux-amd64.tar.gz"
 	downloads := "downloads"
