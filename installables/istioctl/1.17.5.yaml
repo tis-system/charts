@@ -1,0 +1,14 @@
+tools:
+  - name: istioctl
+    version: 1.17.5
+    type: http:archive
+    source: https://github.com/istio/istio/releases/download/{{ .Version }}/istioctl-{{ .Version }}-{{ .OS }}-{{ .Arch }}.tar.gz
+    option:
+      overrides:
+        os:
+          darwin: osx
+      shas:
+        darwin-arm64: sha256:a68c347128b1a23ebc4921ea5d604bfcbc7cc27d72f25c6949658415a93b8bdd
+        darwin-amd64: sha256:
+        linux-arm64: sha256:7d1f65d7b1906fccb71139c2948f90387218c1f767b0af81156ecdab9a744c35
+        linux-amd64: sha256:dae3e263bd9c79a9a26eb69006aaacaf0ba373e04a2b0301056121d8040434c2
