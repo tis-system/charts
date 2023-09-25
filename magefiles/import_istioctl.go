@@ -16,8 +16,14 @@ var installable string
 
 func extractIstioctlInfo(version, os, arch string) (string, error) {
 	out := fmt.Sprintf("/tmp/istioctl-%s-%s-%s.tar.gz", version, os, arch)
-	if err := sh.RunV("curl", "-sSLf", "-o", out,
-		fmt.Sprintf("https://github.com/istio/istio/releases/download/%s/istioctl-%s-%s-%s.tar.gz", version, version, os, arch)); err != nil {
+	if os == "osx" && arch == "amd64" {
+		arch = ""
+	} else {
+		arch = "-" + arch
+	}
+	src := fmt.Sprintf("https://github.com/istio/istio/releases/download/%s/istioctl-%s-%s%s.tar.gz", version, version, os, arch)
+	fmt.Println("fetching", src, "...")
+	if err := sh.RunV("curl", "-sSLf", "-o", out, src); err != nil {
 		return "", nil
 	}
 	sha, err := sh.Output("sha256sum", out)
@@ -33,7 +39,6 @@ func generateInstallable(istioVersion, dist string) (string, error) {
 
 	for _, os := range []string{"osx", "linux"} {
 		for _, arch := range []string{"arm64", "amd64"} {
-			fmt.Println("extracting info", os, arch)
 			sha, err := extractIstioctlInfo(istioVersion, os, arch)
 			if err != nil {
 				return "", err
