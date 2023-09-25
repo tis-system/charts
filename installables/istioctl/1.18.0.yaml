@@ -9,6 +9,6 @@ tools:
           darwin: osx
       shas:
         darwin-arm64: sha256:e0b21cd846cac048ad729ad6013f97eb43a60a725f7ccc16fed43f6a1069c480
-        darwin-amd64: sha256:
+        darwin-amd64: sha256:723f2f7c6056219665bbe28cd3455d6d2cbc11ab42aec35a48ec6087509050ac
         linux-arm64: sha256:7ec0d0bc0155e84db97ce65d8d97d80c36ed005f1edeade349d28717dd3130e5
         linux-amd64: sha256:a83f7548b25ba84a918e1f7593373ad26ec17559a1aa06f1be6c3677495db98f
