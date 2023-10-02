@@ -27,6 +27,8 @@ istios:
   - version: "1.18.0"
   - version: "1.18.1"
   - version: "1.18.2"
+  - version: "1.18.2"
+    tetrate: "1"
   - version: "1.18.3"
   - version: "1.19.0"
 
