@@ -159,7 +159,7 @@ global:
   hub: containers.istio.tetratelabs.com
 
   # Default tag for Istio images.
-  tag: 1.18.2-tetrate-v0
+  tag: 1.18.2-tetrate-v1
 
   # Variant of the image to use.
   # Currently supported are: [debug, distroless]
