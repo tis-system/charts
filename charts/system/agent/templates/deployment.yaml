@@ -43,6 +43,14 @@ spec:
               value: '{{ .Values.registrySync.consul.namespace }}'
             - name: PUBLISH_NAMESPACE
               value: '{{ .Values.registrySync.publishNamespace }}'
+          volumeMounts:
+            - mountPath: "/var/run/license"
+              name: license
+              readOnly: true
+      volumes:
+        - name: license
+          secret:
+            secretName: tis-license
 ---
 apiVersion: v1
 kind: Service
