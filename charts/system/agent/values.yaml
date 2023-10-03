@@ -1,5 +1,5 @@
 image:
-  name: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.c27fa02@sha256:d4a1a71f9b2f3f32ec4f384b4201bad9ecc5bb32f4a7a3fa94fafe89cfed97bb
+  name: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.26a01fc@sha256:ba1fd9729e4f2233323f704e23c3baea22864d71ffabd08f16707f13fd960260
   pullPolicy: Always
 registrySync:
   publishNamespace: ''
