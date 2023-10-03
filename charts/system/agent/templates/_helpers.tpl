@@ -36,8 +36,8 @@ Common labels
 {{- define "agent.labels" -}}
 helm.sh/chart: {{ include "agent.chart" . }}
 {{ include "agent.selectorLabels" . }}
-{{- if .Chart.Version }}
-app.kubernetes.io/version: {{ .Chart.Version | quote }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | replace "+" "_" | quote }}
 app.kubernetes.io/part-of: tis
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
