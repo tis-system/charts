@@ -1,3 +1,27 @@
-image: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.21fa253@sha256:b56e326d929b48fa06bda57432506f06d8293057eda2c314281e32cea908d27c
+image:
+  name: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.27e9857@sha256:6442744ecbfcfa9305d9423a7120ee8a7c236fb0465571696a01e15b5b514a62
+  pullPolicy: Always
+registrySync:
+  publishNamespace: ''
+  consul:
+    endpoint: ''
+    namespace: ''
+    token: ''
+  cloudmap:
+    regiion: us-east-1
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ''
+imagePullSecrets: []
+nameOverride: ''
+fullnameOverride: ''
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+resources: {}
+nodeSelector: {}
+tolerations: {}
+affinity: {}
 
 ---

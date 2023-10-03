@@ -1,42 +1,60 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tis-agent
-  namespace: '{{ .Release.Namespace }}'
+  name: {{ include "agent.fullname" . }}
   labels:
-    app: tis-agent
+    {{- include "agent.labels" . | nindent 4 }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tis-agent
+      {{- include "agent.selectorLabels" . | nindent 6 }}
   template:
     metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       labels:
-        app: tis-agent
+        {{- include "agent.selectorLabels" . | nindent 8 }}
     spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "agent.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-        - name: tis-agent
-          image: '{{ .Values.image }}'
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: '{{ .Values.image.name }}'
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           args:
             - --namespace
             - '{{ .Release.Namespace }}'
           env:
-            - name: ENVIRONMENT
-              value: k8s
-      serviceAccountName: tis
+            - name: CONSUL_ENDPOINT
+              value: '{{ .Values.registrySync.consul.endpoint }}'
+            - name: CONSUL_TOKEN
+              value: '{{ .Values.registrySync.consul.token }}'
+            - name: CONSUL_NAMESPACE
+              value: '{{ .Values.registrySync.consul.namespace }}'
+            - name: PUBLISH_NAMESPACE
+              value: '{{ .Values.registrySync.publishNamespace }}'
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: tis-agent
+  name: {{ .Chart.Name }}
   namespace: '{{ .Release.Namespace }}'
   labels:
-    app: tis-agent
+    {{- include "agent.selectorLabels" . | nindent 8 }}
 spec:
   selector:
-    app: tis-agent
+    {{- include "agent.selectorLabels" . | nindent 6 }}
   ports:
-    - name: tis-agent
+    - name: http
       port: 3000
       targetPort: 3000
