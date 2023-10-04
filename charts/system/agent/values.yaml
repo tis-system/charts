@@ -1,14 +1,16 @@
 image:
-  name: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.d66b36b@sha256:f3216ddcd29f336ecb4c6441f30d1f9442ec5925c7cbab69dc2ea7f6e008974a
-  pullPolicy: Always
+  name: gcr.io/tetratelabs/tis/agent:v0.0.1-nightly.a4382ea@sha256:4af3c53b90e9408dd57277adbfe31221f86a286f68c0315f166564623f4e83c4
+  pullPolicy: IfNotPresent
 registrySync:
+  enable: true
+  resyncPeriod: 5
   publishNamespace: ''
   consul:
     endpoint: ''
     namespace: ''
     token: ''
   cloudmap:
-    regiion: us-east-1
+    region: us-east-1
 serviceAccount:
   create: true
   annotations: {}

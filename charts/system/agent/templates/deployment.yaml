@@ -35,14 +35,23 @@ spec:
             - --namespace
             - '{{ .Release.Namespace }}'
           env:
-            - name: CONSUL_ENDPOINT
-              value: '{{ .Values.registrySync.consul.endpoint }}'
-            - name: CONSUL_TOKEN
-              value: '{{ .Values.registrySync.consul.token }}'
-            - name: CONSUL_NAMESPACE
-              value: '{{ .Values.registrySync.consul.namespace }}'
-            - name: PUBLISH_NAMESPACE
+            - name: REGISTRY_SYNC_ENABLE
+              value: '{{ .Values.registrySync.enable }}'
+
+            - name: REGISTRY_SYNC_PUBLISH_NAMESPACE
               value: '{{ .Values.registrySync.publishNamespace }}'
+            - name: REGISTRY_SYNC_RESYNC_PERIOD
+              value: '{{ .Values.registrySync.resyncPeriod }}'
+
+            - name: REGISTRY_SYNC_CONSUL_ENDPOINT
+              value: '{{ .Values.registrySync.consul.endpoint }}'
+            - name: REGISTRY_SYNC_CONSUL_TOKEN
+              value: '{{ .Values.registrySync.consul.token }}'
+            - name: REGISTRY_SYNC_CONSUL_NAMESPACE
+              value: '{{ .Values.registrySync.consul.namespace }}'
+
+            - name: REGISTRY_SYNC_CLOUDMAP_REGION
+              value: '{{ .Values.registrySync.cloudmap.region }}'
           volumeMounts:
             - mountPath: "/var/run/license"
               name: license
