@@ -1,5 +1,5 @@
 image:
-  name: ghcr.io/tis-system/agent:v0.0.1-rc0@sha256:08f7dea73de4fc9285c6c14bd12e731f0e57a20f02d0c7a30106634aff018b3b
+  name: ghcr.io/tis-system/agent:v0.0.1-nightly.977bfac@sha256:17414c823fabd603f97d18645ee892a73c73c8873a427ec8cabf3d3630ac24fe
   pullPolicy: IfNotPresent
 registrySync:
   enable: true
