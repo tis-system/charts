@@ -1,6 +1,6 @@
 apiVersion: v2
 name: istio-monitoring-demo
-description: A Helm chart for deploying Istio Monitoring demo
+description: Helm chart for deploying Istio Monitoring demo
 
 # A chart can be either an 'application' or a 'library' chart.
 #
