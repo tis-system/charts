@@ -9,6 +9,7 @@ Helm chart for deploying Istio Monitoring demo
 | Repository | Name | Version |
 |------------|------|---------|
 | [https://grafana.github.io/helm-charts](https://grafana.github.io/helm-charts) | grafana | 6.58.4 |
+| [https://prometheus-community.github.io/helm-charts](https://prometheus-community.github.io/helm-charts) | kube-state-metrics | 5.14.0 |
 | [https://prometheus-community.github.io/helm-charts](https://prometheus-community.github.io/helm-charts) | prometheus | 19.6.1 |
 
 ## Values
@@ -30,6 +31,8 @@ Helm chart for deploying Istio Monitoring demo
 | grafana.rbac.pspEnabled | bool | `false` |  |
 | grafana.service.port | int | `3000` |  |
 | grafana.testFramework.enabled | bool | `false` |  |
+| kube-state-metrics.customLabels."sidecar.istio.io/inject" | string | `"false"` |  |
+| kube-state-metrics.enabled | bool | `true` |  |
 | prometheus.alertmanager.enabled | bool | `false` |  |
 | prometheus.enabled | bool | `true` |  |
 | prometheus.kube-state-metrics.enabled | bool | `false` |  |

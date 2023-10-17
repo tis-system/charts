@@ -32,6 +32,10 @@ dependencies:
     condition: prometheus.enabled
     repository: https://prometheus-community.github.io/helm-charts
     version: 19.6.1
+  - name: kube-state-metrics
+    condition: kube-state-metrics.enabled
+    repository: https://prometheus-community.github.io/helm-charts
+    version: 5.14.0
 
 annotations:
   tetrate.io/demo: "true"

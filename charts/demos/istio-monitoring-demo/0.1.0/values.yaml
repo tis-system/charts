@@ -61,3 +61,8 @@ prometheus:
     # use dockerhub
     image:
       repository: prom/prometheus
+
+kube-state-metrics:
+  enabled: true
+  customLabels:
+    sidecar.istio.io/inject: "false"
