@@ -87,7 +87,7 @@ global:
   # Default hub for Istio images.
   # Releases are published to docker hub under 'istio' project.
   # Dev builds from prow are on gcr.io
-  hub: fips-containers.istio.tetratelabs.com
+  hub: containers.istio.tetratelabs.com
 
   # Default tag for Istio images.
   tag: 1.17.6-tetrate-v0

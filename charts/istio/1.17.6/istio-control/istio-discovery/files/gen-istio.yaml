@@ -86,7 +86,7 @@ data:
           }
         },
         "externalIstiod": false,
-        "hub": "fips-containers.istio.tetratelabs.com",
+        "hub": "containers.istio.tetratelabs.com",
         "imagePullPolicy": "",
         "imagePullSecrets": [],
         "istioNamespace": "istio-system",
